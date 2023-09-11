@@ -9,13 +9,13 @@ Tech Stack:
 - TailwindCSS
 
 TODOs:
-[x] Installed Next.js
-[x] Installed Sanity.io
-[x] Integrating Sanity.io into Next.js
-[x] Add atleast one Sanity schema
-[ ] Add atleast one GROQ query
-[ ] Set up TailwindCSS
-[ ] Create Project page(s)
-[ ] Create Navbar
-[ ] Fine-tune the front-end
-[ ] Deployment to Vercel
+- [x] Installed Next.js
+- [x] Installed Sanity.io
+- [x] Integrating Sanity.io into Next.js
+- [x] Add atleast one Sanity schema
+- [ ] Add atleast one GROQ query
+- [ ] Set up TailwindCSS
+- [ ] Create Project page(s)
+- [ ] Create Navbar
+- [ ] Fine-tune the front-end
+- [ ] Deployment to Vercel
