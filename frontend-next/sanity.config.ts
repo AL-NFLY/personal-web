@@ -1,6 +1,6 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
-import project from "./sanity/schemas/project-schema";
+giimport schemas from "./sanity/schemas";
 
 const config = defineConfig({
     projectId: "giahi441",
@@ -9,7 +9,7 @@ const config = defineConfig({
     apiVersion: "2023-11-09",
     basePath: "/admin",
     plugins: [deskTool()],
-    schema: { types: [project] }
+    schema: { types: schemas },
 })
 
 export default config
