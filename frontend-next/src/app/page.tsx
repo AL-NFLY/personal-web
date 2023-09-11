@@ -9,7 +9,7 @@ export default async function Home() {
         <article className="">
           <h2 className="text-2xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
           <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-bold">
-            I'm
+            I&apos;m
             <span className="bg-gradient-to-r from-cyan-300 to-red-300 dark:bg-clip-text dark:text-transparent"> Almer!</span>
           </h1>
           <p className="mt-4">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
