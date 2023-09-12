@@ -16,6 +16,7 @@ TODOs:
 - [x] Add atleast one GROQ query
 - [x] Setup atleast one TS typec
 - [x] Setup TailwindCSS
+- [ ] Create Hero Section
 - [ ] Create Project page(s)
 - [ ] Create Navbar
 - [ ] Fine-tune the front-end
