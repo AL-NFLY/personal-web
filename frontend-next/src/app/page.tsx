@@ -25,10 +25,12 @@ export default async function Home() {
 
 
           <ul className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">{projects.map((project) => (
-            <li className="group rounded-lg border hover:border-b-4 hover:border-dark border-gray-500 hover:border-b-primary hover:scale-105 active:scale-95 duration-300 transition ">
+            <li 
+              className="group rounded-lg border hover:border-b-4 hover:border-dark border-gray-500 hover:border-b-primary hover:scale-105 active:scale-95 duration-300 transition"
+              key={project._id}
+              >
               <Link 
                 href={`/projects/${project.slug}`} 
-                key={project._id} 
               >
                 {project.image && (
                   <Image
