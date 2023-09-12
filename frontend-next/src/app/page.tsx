@@ -12,7 +12,7 @@ export default async function Home() {
           <h2 className="text-2xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
           <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-bold">
             I&apos;m
-            <span className="bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent"> Almer!</span>
+            <span className="bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent"> Almer</span>!
           </h1>
           <p className="mt-4">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
         </article>
@@ -23,27 +23,27 @@ export default async function Home() {
           <span className="font-bold text-gray-700 text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">My Projects</span>
           <p className="mt-2">Here is a list of my projects, feel free to check them out!</p>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 ">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {projects.map((project)=>(
               <Link 
                 href={`/projects/${project.slug}`}
                 key={project._id}
-                className="border-2 border-gray-600 hover:border-black rounded-sm hover:scale-[1.05] active:scale-[0.95] transition duration-300"
+                className="group border hover:border-b-4 hover:border-b-primary hover:border-0 border-gray-600 hover:bg-gradient-to-br hover:from-zinc-800 hover:to-dark hover rounded-lg hover:scale-[1.05] active:scale-[0.95] transition duration-300"
               >
                 {project.image && (
                   <Image
                   src={project.image}
                   alt={project.name}
-                  width={500}
+                  width={450}
                   height={300}
-                    className="object-cover rounded-t-sm border border-gray-500"
+                    className="object-cover rounded-t-md border-b-2 border-b-zinc-300"
                     />
                     )}
                   <div className="px-6 py-3 leading-6">
-                    <span className="font-extrabold bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">
+                    <span className="font-extrabold group-hover:bg-gradient-to-r text-sky-300 from-primary to-secondary group-hover:dark:bg-clip-text group-hover:dark:text-transparent group-hover:bg-red-300 duration-50">
                       {project.name}
                     </span>
-                    <div className="mt-1 text-sm  "><PortableText value={project.content} /></div>
+                    <div className="mt-1 text-sm"><PortableText value={project.content} /></div>
                     <p className="text-sm mt-4"> Read More →</p>
                   </div>  
               </Link>
