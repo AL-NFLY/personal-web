@@ -14,14 +14,14 @@ export default async function Home() {
             I&apos;m
             <span className="bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent"> Almer</span>!
           </h1>
-          <p className="mt-4">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
+          <p className="mt-4 text-zinc-300">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
         </article>
       </section>
 
       <section className="min-h-screen">
         <article className="">
-          <span className="font-bold text-gray-700 text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">My Projects</span>
-          <p className="mt-2">Here is a list of my projects, feel free to check them out!</p>
+          <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">My Projects</span>
+          <p className="mt-2 text-zinc-300">Here is a list of my projects, feel free to check them out!</p>
 
 
           <ul className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">{projects.map((project) => (
@@ -29,7 +29,7 @@ export default async function Home() {
               <Link 
                 href={`/projects/${project.slug}`} 
                 key={project._id} 
-                className="">
+              >
                 {project.image && (
                   <Image
                     src={project.image}
@@ -43,7 +43,7 @@ export default async function Home() {
                     <span className="font-extrabold group-hover:bg-grahttps://fragrance-fresh.vercel.app/dient-to-r text-primary group-hover:bg-gradient-to-r from-primary to-secondary group-hover:dark:bg-clip-text group-hover:dark:text-transparent group-hover:bg-red-300 duration-50">
                       {project.name}
                     </span>
-                    <div className="mt-1 text-sm "><PortableText value={project.content} /></div>
+                    <div className="mt-1 text-sm text-zinc-300"><PortableText value={project.content} /></div>
                     <p className="text-sm mt-4"> Read More →</p>
                   </div>  
               </Link>
