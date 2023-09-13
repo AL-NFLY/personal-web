@@ -18,45 +18,48 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-dark ${inter.className}`}>
-      <header>
-        <div>
-          <nav className='flex justify-between items-center px-48 py-4 border-b border-b-gray-500'>
-            <Link
-              href='/'
-              className='bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-extrabold text-3xl px-2'
-              >
-            AL
-            </Link>
-            <ul className='flex justify-between gap-12 font-semibold'>
-              <li>
-                <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
-                Home 
-                </a>
-              </li>
+        <header>
+          <div>
+            <nav className='flex justify-between items-center px-48 py-4 '>
+              <Link
+                href='/'
+                className='font-extrabold text-3xl px-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'
+                >
+              AL
+              </Link>
+              <ul className='flex justify-between gap-12 font-semibold'>
+                <li>
+                  <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+                  Home 
+                  </a>
+                </li>
 
-              <li>
-                <a href="#projects" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
-                Projects
-                </a>
-              </li>
+                <li>
+                  <a href="#projects" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+                  Projects
+                  </a>
+                </li>
 
-              <li>
-                <a href="" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
-                About Me
-                </a>
-              </li>
+                <li>
+                  <a href="" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+                  About Me
+                  </a>
+                </li>
 
 
-              <li>
-                <a href="" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-        {children}
+                <li>
+                  <a href="" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </header>
+        <main className='-mt-16'>
+          {children}
+        </main>
       </body>
     </html>
   )
