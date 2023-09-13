@@ -20,7 +20,9 @@ export default async function Home() {
 
       <section className="min-h-screen">
         <article className="">
-          <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">My Projects</span>
+          <h2 className="pt-8" id="projects">
+            <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">My Projects</span>
+          </h2>
           <p className="mt-2 text-zinc-300">Here is a list of my projects, feel free to check them out!</p>
 
 
