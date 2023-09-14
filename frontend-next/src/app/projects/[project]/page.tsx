@@ -11,17 +11,18 @@ export default async function Project({ params }: Props){
     const project = await getProject(slug)
 
     return(
-        <main className="bg-dark h-screen">
-            <section className="max-w-3xl mx-auto py-20">
-                <div>
+        <main className="h-screen">
+            <section className="max-w-3xl mx-auto">
+                <article>
                     <Image 
                         src={project.image}
                         alt={project.name}
                         width={1920}
                         height={1080}
-                        className="rounded-md object-contain"
+                        className="rounded-md max-sm:rounded-none object-contain"
                     />
-                    <div className="flex flex-col items-start mt-6">
+
+                    <div className="flex flex-col items-start mt-6 max-sm:px-4">
                         <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{project.name}</h1>
                         <ul className="mt-1 list-inside list-disc px-3 text-sm text-zinc-300">
                             <li>
@@ -47,12 +48,12 @@ export default async function Project({ params }: Props){
                                 </a>    
                             </li>
                         </ul>
-                        <div className="mt-3 border-t pt-3">
+                        <div className="mt-3 border-t pt-3 text-zinc-300">
                             <PortableText value={project.content} />
                         </div>
                     </div>
 
-                </div>
+                </article>
 
             </section>
         </main>
