@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className={`bg-dark ${inter.className}`}>
+    <body className={`bg-dark text-white  ${inter.className}`}>
     <header>
             <nav className='flex justify-between items-center px-48 max-sm:px-8 py-4'>
               <Link
