@@ -7,7 +7,7 @@ import { PortableText } from "@portabletext/react";
 export default async function Home() {
   const projects = await getProjects();
   return (
-    <main className="px-48 max-sm:px-8 -mt-20">
+    <main className="px-48 max-sm:px-8 -mt-20 max-sm:-mt-24">
       <section className="flex flex-col items-center justify-center min-h-screen">
         <article  >
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
@@ -43,7 +43,7 @@ export default async function Home() {
           </h2>
           <p className="mt-2 text-zinc-300">Here is a list of my projects, feel free to check them out!</p>
 
-          <ul className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">{projects.map((project) => (
+          <ul className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">{projects.map((project) => (
             <li 
               className="group rounded-lg border hover:border-b-4 hover:border-dark border-gray-500 hover:border-b-primary hover:scale-105 active:scale-95 duration-300 transition"
               key={project._id}
@@ -59,14 +59,14 @@ export default async function Home() {
                   />
                 )}
                 
-                  <div className="px-8 my-4 ">
+                  <div className="px-8 py-4 max-sm:px-4 max-sm:py-3">
                     <span className="font-extrabold text-primary group-hover:bg-gradient-to-r from-primary to-secondary group-hover:dark:bg-clip-text group-hover:dark:text-transparent group-hover:bg-red-300 duration-50">
                       {project.name}
                     </span>
                     <div className="mt-1 text-sm text-zinc-300">
                       <PortableText value={project.content} />
                     </div>
-                    <p className="text-sm mt-4"> Read More →</p>
+                    <p className="text-sm pt-4 max-sm:pt-3"> Read More →</p>
                   </div>  
               </Link>
             </li>
