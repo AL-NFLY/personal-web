@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header>
+    <header className='sticky top-0 z-50'>
       <nav className='flex justify-between items-center px-48 max-sm:px-8 py-4'>
         <Link
           href='/'
