@@ -46,7 +46,7 @@ export default async function Home() {
 
           <ul className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">{projects.map((project) => (
             <li 
-              className="group rounded-lg border hover:border-b-4 hover:border- border-gray-500 hover:border-b-primary hover:scale-105 active:scale-95 duration-300 transition"
+              className="group rounded-lg border hover:border-b-4 border-gray-500 hover:border-b-primary hover:-translate-y-2 active:scale-[0.98] duration-300 transition"
               key={project._id}
               >
               <Link href={`/projects/${project.slug}`}>
