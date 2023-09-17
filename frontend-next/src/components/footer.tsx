@@ -1,4 +1,3 @@
-// import { github, gmail, linkedIn } from '@/app/assets/icons';
 import {  IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
 import Link from 'next/link';
 import React from 'react'
