@@ -42,7 +42,7 @@ const Footer = () => {
             <>
               <Link href={social.href} target='_blank' className=""
               >
-                <social.icon className="mt-1 h-10 w-10 p-1 rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:text-dark duration-150 active:text-dark/80"/>
+                <social.icon className="mt-1 h-9 w-9 p-1 rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:text-dark duration-150 active:text-dark/80"/>
               </Link>
             </>
           ))}
