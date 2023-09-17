@@ -37,8 +37,9 @@ export default async function Home() {
       </section>
       
       <section className="min-h-screen">
-        <article className="">
-          <h2 className="pt-8" id="projects">
+        <article className="" id="projects">
+          <div className="invisible">Divide</div>
+          <h2 className="mt-10" id="">
             <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Currated Projects</span>
           </h2>
           <p className="mt-2 text-zinc-300">Here is a list of my projects, feel free to check them out!</p>
