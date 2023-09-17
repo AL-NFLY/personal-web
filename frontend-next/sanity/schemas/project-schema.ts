@@ -15,6 +15,11 @@ const project = {
             options: { source: "name" }
         },
         {
+            name: "overview",
+            title:"Overview",
+            type: "string",
+        },
+        {
             name: "image",
             title: "Image",
             type: "image",

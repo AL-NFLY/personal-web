@@ -64,7 +64,7 @@ export default async function Home() {
                       {project.name}
                     </span>
                     <div className="mt-1 text-sm text-zinc-300">
-                      <PortableText value={project.content} />
+                      <p>{project.overview}</p>
                     </div>
                     <p className="text-sm pt-4 max-sm:pt-3"> Read More →</p>
                   </div>  
