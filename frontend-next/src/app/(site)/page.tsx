@@ -54,8 +54,8 @@ export default async function Home() {
                   <Image
                     src={project.image}
                     alt={project.name}
-                    width={450}
-                    height={300}
+                    width={500}
+                    height={250}
                     className="object-contain overflow-hidden rounded-t-lg border-b border-b-gray-500 justify-center items-center flex"
                   />
                 )}

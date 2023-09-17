@@ -1,6 +1,5 @@
 // import { github, gmail, linkedIn } from '@/app/assets/icons';
 import {  IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { IconType } from "react-icons";
@@ -36,8 +35,7 @@ const socials: Social[] = [
 
 const Footer = () => {
   return (
-  
-    <footer className='xl:px-48 max-sm:px-8'>
+    <footer className='xl:px-48 max-sm:px-8' id="contact">
       <main className='mt-8 flex flex-col flex-wrap items-center border-t border-zinc-500 text-zinc-300'>
         <p className="mt-8">Hit me up!</p>
         <div className='flex space-x-4'>
