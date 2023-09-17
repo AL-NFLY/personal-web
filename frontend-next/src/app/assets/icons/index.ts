@@ -1,9 +1,9 @@
-import github from '../icons/github.svg';
-import gmail from "../icons/gmail.svg";
-import linkedIn from "../icons/linkedin.svg";
-import twitter from "../icons/twitter.svg";
-import instagram from "../icons/instagram.svg";
-import hamburger from "../icons/hamburger.svg";
+import github from "./github.svg"
+import gmail from "./gmail.svg";
+import linkedIn from "./linkedin.svg";
+import twitter from "./twitter.svg";
+import instagram from "./instagram.svg";
+import hamburger from "./hamburger.svg";
 
 export {
     github,
@@ -11,6 +11,6 @@ export {
     linkedIn,
     twitter,
     instagram,
-    
+
     hamburger,
 }
