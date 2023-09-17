@@ -1,4 +1,4 @@
-import { getProject } from "../../../../sanity/sanity-utils"
+import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
@@ -11,7 +11,7 @@ export default async function Project({ params }: Props){
     const project = await getProject(slug)
 
     return(
-        <main className="h-screen">
+        <main className="min-h-screen">
             <section className="max-w-3xl mx-auto">
                 <article>
                     <Image 

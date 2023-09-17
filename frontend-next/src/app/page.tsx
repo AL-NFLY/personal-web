@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { getProjects } from "../../sanity/sanity-utils";
+import { getProjects } from "@/sanity/sanity-utils";
 import Link from "next/link";
-import { PortableText } from "@portabletext/react";
+// import { PortableText } from "@portabletext/react";
 
 
 export default async function Home() {
