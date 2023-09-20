@@ -58,7 +58,7 @@ export const experiencesData = [
 
 const Experience = () => {
   return (
-    <section className="mt-2">
+    <section className="mt-8">
       <h2>
         <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Experiences</span>
       </h2>
