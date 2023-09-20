@@ -62,17 +62,11 @@ const Experience = () => {
       <h2>
         <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Experiences</span>
       </h2>
-        {/* <VerticalTimeline>
-          {
-            experiencesData.map((experience, index) => (
-              <React.Fragment key={index}>
-                <VerticalTimelineElement></VerticalTimelineElement>
-              </React.Fragment>
-            ))
-          }
-        </VerticalTimeline> */}
+
+      <p className="mt-2">These are some of my experience while I was pursuing my bachelor&apos; degree</p>
       <VerticalTimeline
         lineColor="#d4d4d8"
+        className="!mt-12"
       >
         {
           experiencesData.map((item, index) => (
@@ -81,9 +75,6 @@ const Experience = () => {
               contentStyle={{
                 background: '#27272a',
                 boxShadow: '0 3px #7dd3fc',
-                // background: '#18181b',
-                // border: '1px solid white',
-                
               }}
               contentArrowStyle={{borderRight: '7px solid white'}}
               date={item.date}
