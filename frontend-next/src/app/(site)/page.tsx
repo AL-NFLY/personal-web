@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getProjects } from "@/sanity/sanity-utils";
 import Link from "next/link";
-import StarCanvas from "@/components/Stars";
 import Experience from "@/components/Experience";
 // import { PortableText } from "@portabletext/react";
 
