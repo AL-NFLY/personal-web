@@ -1,6 +1,7 @@
 'use client'
 import { ZCOOL_KuaiLe } from "next/font/google";
 import React from "react";
+import { IoCloud, IoCloudDone, IoLogoOctocat, IoSchool } from "react-icons/io5";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -14,20 +15,8 @@ export const experiencesData = [
       'Implemented learnt knowledge into VMWare and AlibabaCloud.',
     descThree:
       'Presented & pitch the prototype to supervisor.',
-    icon: <></>,
+    icon: <IoCloud />,
     date: 'July 2022 - October 2022',
-  },
-  {
-    title: 'Cloud Computing Cohort',
-    location: 'Bangkit Academy by Google, GoTo, & Traveloka',
-    descOne:
-      'Had a hands-on-experience working on Cloud Computing using GCP, Fullstack Development using React-Express.js, & work-related soft skills.',
-    descTwo:
-      'Achieved Associate Cloud Engineer (ACE) certificate from Google.',
-    descThree: 
-      'Selected as a company-based project by Traveloka, out of hundreds of applicants, and won as Best Team.',
-    icon: <></>,
-    date: 'February 2022 - July 2022',
   },
   {
     title: 'Head of Internal Affairs',
@@ -38,26 +27,38 @@ export const experiencesData = [
       'Directed 9 staff and appointed them responsibility based on their interests and skills.',
     descThree:
       'Evaluated performances of each staff and events based on Key Performance Indicator (KPI) target.',
-    icon: <></>,
+    icon: <IoSchool />,
     date: 'April 2022 - April 2023',
+  },
+  {
+    title: 'Cloud Computing Cohort',
+    location: 'Bangkit Academy by Google, GoTo, & Traveloka',
+    descOne:
+      'Had a hands-on-experience working on Cloud Computing using GCP, Fullstack Development using React-Express.js, & work-related soft skills.',
+    descTwo:
+      'Achieved Associate Cloud Engineer (ACE) certificate from Google.',
+    descThree: 
+      'Selected as a company-based project by Traveloka, out of hundreds of applicants, and won as Best Team.',
+    icon: <IoCloud />,
+    date: 'February 2022 - July 2022',
   },
   {
     title: 'Expert Staff of Sponsorship',
     location: 'Multimedia & Game Event 7 (MAGE 7)',
     descOne:
-      'Secured an exclusive Rp15.000.000 deal with Telkom Indonesia as a sponsorship partner.',
+    'Secured an exclusive Rp15.000.000 deal with Telkom Indonesia as a sponsorship partner.',
     descTwo:
-      'Came up with MAGE 7 slogan.',
+    'Came up with MAGE 7 slogan.',
     descThree:
-      'Collaborate with other expert staff to create happy hour for all divisions',
-    icon: <></>,
+    'Collaborate with other expert staff to create happy hour for all divisions',
+    icon: <IoLogoOctocat />,
     date: 'June 2021 - November 2021', 
   },
 ] as const;
 
 const Experience = () => {
   return (
-    <section>
+    <section className="mt-2">
       <h2>
         <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Experiences</span>
       </h2>
@@ -70,20 +71,31 @@ const Experience = () => {
             ))
           }
         </VerticalTimeline> */}
-      <VerticalTimeline>
+      <VerticalTimeline
+        lineColor="#d4d4d8"
+      >
         {
           experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement 
               contentStyle={{
                 background: '#27272a',
+                boxShadow: '0 3px #7dd3fc',
+                // background: '#18181b',
+                // border: '1px solid white',
+                
               }}
-              contentArrowStyle={{borderRight: '7px solid #232631'}}
+              contentArrowStyle={{borderRight: '7px solid white'}}
               date={item.date}
+              icon={item.icon}
+              iconStyle={{
+                background: 'white',
+                color: '#27272a'
+              }}
               >
-              <h3 className="font-bold text-xl">{item.title}</h3>
-              <p className="text-zinc-300 !mt-0 !text-sm">{item.location}</p>
-              <ul className="list-disc iniside list-inside mt-3 space-y-1 text-sm text-white">
+              <span className="font-bold text-xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{item.title}</span>
+              <p className="text-zinc-400 !mt-0 !text-sm">{item.location}</p>
+              <ul className="list-disc iniside list-inside mt-3 space-y-1 text-sm text-zinc-300">
                 <li>{item.descOne}</li>
                 <li>{item.descTwo}</li>
                 <li>{item.descThree}</li>
