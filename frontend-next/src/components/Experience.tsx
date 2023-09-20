@@ -7,15 +7,15 @@ import 'react-vertical-timeline-component/style.min.css';
 export const experiencesData = [
   {
     title: 'Cloud Engineer Intern',
-    location: 'Tangerang Selatan, Banten, Indonesia',
+    location: 'PT. Sigma Cipta Caraka (Telkomsigma)',
     descOne:
-      'Learnt the fundamentals & origin of Cloud Computing-Virtualization, such as SDS, SDN, & SDDC.', 
+      'Learnt the fundamentals of Virtualization & Cloud Computing, such as SDS, SDN, & SDDC.', 
     descTwo:
       'Implemented learnt knowledge into VMWare and AlibabaCloud.',
     descThree:
       'Presented & pitch the prototype to supervisor.',
     icon: <></>,
-    date: 'July 2022 -- October 2022',
+    date: 'July 2022 - October 2022',
   },
   {
     title: 'Cloud Computing Cohort',
@@ -27,7 +27,7 @@ export const experiencesData = [
     descThree: 
       'Selected as a company-based project by Traveloka, out of hundreds of applicants, and won as Best Team.',
     icon: <></>,
-    date: '',
+    date: 'February 2022 - July 2022',
   },
   {
     title: 'Head of Internal Affairs',
@@ -39,19 +39,19 @@ export const experiencesData = [
     descThree:
       'Evaluated performances of each staff and events based on Key Performance Indicator (KPI) target.',
     icon: <></>,
-    date: '',
+    date: 'April 2022 - April 2023',
   },
   {
     title: 'Expert Staff of Sponsorship',
     location: 'Multimedia & Game Event 7 (MAGE 7)',
     descOne:
-      'Came up with MAGE 7 slogan.',
-    descTwo:
       'Secured an exclusive Rp15.000.000 deal with Telkom Indonesia as a sponsorship partner.',
+    descTwo:
+      'Came up with MAGE 7 slogan.',
     descThree:
       'Collaborate with other expert staff to create happy hour for all divisions',
     icon: <></>,
-    date: '', 
+    date: 'June 2021 - November 2021', 
   },
 ] as const;
 
@@ -74,10 +74,16 @@ const Experience = () => {
         {
           experiencesData.map((item, index) => (
           <React.Fragment key={index}>
-            <VerticalTimelineElement className="text-zinc-600">
+            <VerticalTimelineElement 
+              contentStyle={{
+                background: '#27272a',
+              }}
+              contentArrowStyle={{borderRight: '7px solid #232631'}}
+              date={item.date}
+              >
               <h3 className="font-bold text-xl">{item.title}</h3>
-              <p>{item.location}</p>
-              <ul className="list-disc iniside list-inside">
+              <p className="text-zinc-300 !mt-0 !text-sm">{item.location}</p>
+              <ul className="list-disc iniside list-inside mt-3 space-y-1 text-sm text-white">
                 <li>{item.descOne}</li>
                 <li>{item.descTwo}</li>
                 <li>{item.descThree}</li>
