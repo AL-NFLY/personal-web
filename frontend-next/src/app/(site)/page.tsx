@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { getProjects } from "@/sanity/sanity-utils";
 import Link from "next/link";
+import StarCanvas from "@/components/Stars";
+import Experience from "@/components/Experience";
 // import { PortableText } from "@portabletext/react";
 
 
@@ -31,11 +33,16 @@ export default async function Home() {
             >
               Visit my Github
             </Link>
+
+            {/* <StarCanvas /> */}
           </div>
         </article>
 
       </section>
-      
+
+      <Experience />
+
+
       <section className="min-h-screen">
         <article className="" id="projects">
           <div className="invisible">Divide</div>
