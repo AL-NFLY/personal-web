@@ -3,6 +3,7 @@ import { getProjects } from "@/sanity/sanity-utils";
 import Link from "next/link";
 import Experience from "@/components/Experience";
 import ProjectCards from "@/components/ProjectCards";
+import { IoCaretDown } from "react-icons/io5";
 // import { PortableText } from "@portabletext/react";
 
 
@@ -37,6 +38,9 @@ export default async function Home() {
             {/* <StarCanvas /> */}
           </div>
         </article>
+        <Link className="absolute bottom-4 md:bottom-12 cursor-pointer rounded-md transition-colors hover:text-primary focus-visible:text-primary" href='#experience'>
+          <IoCaretDown className='h-8 w-8 animate-pulse md:h-10 md:w-10'/>
+        </Link>
       </section>
 
       <Experience />
