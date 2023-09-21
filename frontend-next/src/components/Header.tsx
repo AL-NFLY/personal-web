@@ -24,7 +24,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+            <a href="/about" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
             About
             </a>
           </li>
