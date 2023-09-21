@@ -38,8 +38,8 @@ export default async function Home() {
             {/* <StarCanvas /> */}
           </div>
         </article>
-        <Link className="absolute bottom-4 md:bottom-12 cursor-pointer rounded-md transition-colors hover:text-primary focus-visible:text-primary" href='#experience'>
-          <IoCaretDown className='h-8 w-8 animate-pulse md:h-10 md:w-10'/>
+        <Link className="absolute bottom-4 md:bottom-12 rounded-full cursor-pointer transition-colors duration-300" href='#experience'>
+          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary '/>
         </Link>
       </section>
 
