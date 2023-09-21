@@ -24,7 +24,7 @@ export default async function Home() {
             <Link 
               href='https://drive.google.com/file/d/1dzMphHTvG-Fq3diGmdX1ymK69n07hGXq/view?usp=sharing'
               target="_blank"
-              className="rounded-sm px-4 py-1 border hover:scale-105 bg-gradient-to-r from-primary to-secondary text-black font-bold shadow-lg hover:shadow-secondary duration-300">
+              className="rounded-sm px-4 py-1 border hover:scale-105 bg-gradient-to-r from-primary to-secondary text-dark font-bold shadow-lg hover:shadow-secondary duration-300">
               View my CV
             </Link>
             <Link
@@ -38,8 +38,8 @@ export default async function Home() {
             {/* <StarCanvas /> */}
           </div>
         </article>
-        <Link className="absolute bottom-4 md:bottom-12 rounded-full cursor-pointer transition-colors duration-300" href='#experience'>
-          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary '/>
+        <Link className="absolute bottom-4 md:bottom-12 rounded-full transition-colors duration-300" href='#experience'>
+          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary'/>
         </Link>
       </section>
 
