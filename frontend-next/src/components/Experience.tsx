@@ -58,7 +58,7 @@ export const experiencesData = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="pt-24" >
+    <section id="experience" className="pt-16 md:pt-24" >
       <h2>
         <span  className=" text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Experiences</span>
       </h2>
@@ -66,7 +66,7 @@ const Experience = () => {
       <p className="mt-2">These are some of my experience while I was pursuing my bachelor&apos; degree</p>
       <VerticalTimeline
         lineColor="#d4d4d8"
-        className="!mt-12"
+        className="!mt-6 md:!mt-12"
       >
         {
           experiencesData.map((item, index) => (

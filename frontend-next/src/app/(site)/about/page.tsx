@@ -1,7 +1,7 @@
 export default async function About() {
     return(
         <main className="min-h-screen">
-            <section className="px-48 mt-16">
+            <section className="px-8 md:px-48 mt-16">
                 <>
                     <p className="font-semibold text-4xl">Aloha,</p>
                     <h1>
