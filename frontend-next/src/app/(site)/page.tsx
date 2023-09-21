@@ -10,15 +10,15 @@ import { IoCaretDown } from "react-icons/io5";
 export default async function Home() {
   const projects = await getProjects();
   return (
-    <main className="px-48 max-sm:px-8 -mt-20 max-sm:-mt-24">
-      <section className="flex flex-col items-center justify-center min-h-screen">
-        <article  >
+    <main className="px-48 max-sm:px-8 md:-mt-20 -mt-28">
+      <section className="flex flex-col items-center justify-center min-h-screen ">
+        <article>
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
           <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold">
             I&apos;m
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Almer</span>!
           </h1>
-          <p className="mt-4 text-zinc-300">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
+          <p className="mt-4 text-zinc-300 tracking-wide">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
 
           <div className="flex mt-6 gap-4">
             <Link 
@@ -38,7 +38,7 @@ export default async function Home() {
             {/* <StarCanvas /> */}
           </div>
         </article>
-        <Link className="absolute bottom-4 md:bottom-12 rounded-full transition-colors duration-300" href='#experience'>
+        <Link className="absolute bottom-8 md:bottom-12 rounded-full transition-colors duration-300" href='#experience'>
           <IoCaretDown className='rounded-full h-8 w-8 animate-pulse md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary'/>
         </Link>
       </section>
