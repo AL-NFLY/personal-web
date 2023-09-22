@@ -20,9 +20,10 @@ TODOs:
 - [x] Deployment to Vercel
 - [x] Create Navbar
 - [x] Create Footer
+- [x] Create Experience Section
 - [ ] Create Profile Schema
 - [ ] Add three.js to the main page
-- [ ] Create Experience Section
 - [ ] Create Projects app
 - [ ] Create About app
-- [ ] Fine-tune the front-end
+- [ ] Finalize individual Project blogs
+- [ ] Finalize front-end design
