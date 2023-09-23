@@ -8,7 +8,6 @@ import { IoCaretDown } from "react-icons/io5";
 
 
 export default async function Home() {
-  const projects = await getProjects();
   return (
     <main className="px-48 max-sm:px-8 md:-mt-20 -mt-28">
       <section className="flex flex-col items-center justify-center min-h-screen ">
