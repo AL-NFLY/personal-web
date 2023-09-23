@@ -22,9 +22,13 @@ export default async function About() {
 
                     <>
                         {profile.map((me) => (
-                            <article>
-                                <Image src={me.image} alt={me.name} width={200} height={500}></Image>
-                                {/* <p>{me.name}</p> */}
+                            <article className="flex space-x-8 mt-6">
+                                    <Image src={me.image} alt={me.name} width={200} height={400} className="rounded-sm"></Image>
+                                <div className="max-w-xl leading-relaxed text-zinc-300">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aperiam, accusantium ad suscipit repellendus laborum temporibus adipisci itaque dolorum repellat cupiditate iusto id error laboriosam ratione inventore vero porro reiciendis!</p>
+                                <p className="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, itaque libero dolorem alias fuga odit facere nihil laborum reprehenderit quisquam molestias numquam atque perferendis minima eum at recusandae, ipsam error? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quod quas sit quasi dolorum fuga hic sapiente veniam, ullam nostrum, facilis repellat aspernatur? Ex veniam eligendi itaque sunt deserunt nemo?</p>
+
+                                </div>
                                 {/* <PortableText value={me.content}></PortableText> */}
                             </article>
 
