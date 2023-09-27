@@ -60,7 +60,7 @@ const Experience = () => {
   return (
     <section id="experience" className="pt-20 md:pt-24" >
       <h2>
-        <span  className=" text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Experiences</span>
+        <span  className=" text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">Experiences</span>
       </h2>
 
       <p className="mt-2">These are some of my experience while I was pursuing my bachelor&apos; degree</p>
@@ -76,12 +76,12 @@ const Experience = () => {
                 background: '#27272a',
                 boxShadow: '0 3px #7dd3fc',
               }}
-              contentArrowStyle={{borderRight: '7px solid white'}}
+              contentArrowStyle={{borderRight: '7px solid #27272a'}}
               date={item.date}
               icon={item.icon}
               iconStyle={{
                 background: 'white',
-                color: '#27272a'
+                color: '#27272a',
               }}
               >
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{item.title}</span>
