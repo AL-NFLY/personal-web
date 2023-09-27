@@ -35,7 +35,7 @@ const socials: Social[] = [
 const Footer = () => {
   return (
     <footer className='xl:px-48 max-sm:px-8 pb-2' id="contact">
-      <main className='mt-12 flex flex-col flex-wrap items-center border-t border-zinc-500 text-zinc-300'>
+      <main className='mt-12 flex flex-col flex-wrap items-center border-t border-zinc-500 text-zinc-600 dark:text-zinc-300'>
         <p className="mt-8">Hit me up!</p>
         <div className='flex space-x-4'>
           {socials.map((social) => (
@@ -47,7 +47,7 @@ const Footer = () => {
             </>
           ))}
           </div>
-        <p className='mt-4 text-sm text-zinc-300'>© 2023 Almer Naufaly</p>
+        <p className='mt-4 text-sm text-zinc-600 dark:text-zinc-300'>© 2023 Almer Naufaly</p>
       </main>
     </footer> 
     )

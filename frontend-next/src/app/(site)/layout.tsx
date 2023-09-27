@@ -19,14 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    {/* <body className={`bg-dark text-white   ${inter.className}`}> */}
-    <body className={inter.className}>
-      <Providers>
-        <Header />
-          {children}
-        <Footer />
-      </Providers>
-    </body>
+    <Providers>
+      <body className={`dark:bg-dark   ${inter.className}`}>
+      {/* <body className={inter.className}> */}
+          <Header />
+            {children}
+          <Footer />
+      </body>
+    </Providers>
   </html>
   )
 }
