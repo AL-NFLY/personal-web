@@ -6,14 +6,14 @@ const Header = () => {
 
   return (
     <header className='sticky top-0 z-50'>
-      <nav className='flex justify-between items-center px-48 max-sm:px-8 py-4 bg-dark'>
+      <nav className='flex justify-between items-center px-48 max-sm:px-8 py-4 dark:bg-dark bg-white shadow-sm dark:shadow-none'>
         <Link
           href='/'
           className='flex font-extrabold text-3xl px-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'
           >
         AL
         </Link>
-        <ul className='flex gap-12 max-sm:gap-5 font-semibold max-sm:text-sm'>
+        <ul className='flex items-center gap-12 max-sm:gap-5 font-semibold max-sm:text-sm '>
           <li>
             <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
             Home 
