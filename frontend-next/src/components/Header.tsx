@@ -15,26 +15,26 @@ const Header = () => {
         </Link>
         <ul className='flex items-center gap-12 max-sm:gap-5 font-semibold max-sm:text-sm '>
           <li>
-            <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+            <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
             Home 
             </a>
           </li>
 
           <li>
-            <a href="/#projects" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+            <a href="/#projects" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
             Projects
             </a>
           </li>
 
           <li>
-            <a href="/about" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+            <a href="/about" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
             About
             </a>
           </li>
 
 
           <li>
-            <a href="/#contact" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
+            <a href="/#contact" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
               Contact
             </a>
           </li>
