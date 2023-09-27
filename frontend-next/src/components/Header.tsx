@@ -1,6 +1,9 @@
+'use client'
 import Link from 'next/link'
-
+import ThemeToggle from './ThemeToggle'
+import { useTheme } from 'next-sanity/studio'
 const Header = () => {
+
   return (
     <header className='sticky top-0 z-50'>
       <nav className='flex justify-between items-center px-48 max-sm:px-8 py-4 bg-dark'>
@@ -34,6 +37,10 @@ const Header = () => {
             <a href="/#contact" className='hover:bg-gradient-to-r from-primary to-secondary hover:bg-clip-text hover:text-transparent duration-300'>
               Contact
             </a>
+          </li>
+
+          <li>
+            <ThemeToggle />
           </li>
         </ul>
       </nav>
