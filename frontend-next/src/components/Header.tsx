@@ -13,7 +13,7 @@ const Header = () => {
           >
         AL
         </Link>
-        <ul className='flex items-center gap-12 max-sm:gap-5 font-semibold max-sm:text-sm '>
+        <ul className='flex items-center gap-12 max-sm:gap-6 font-semibold max-sm:text-sm '>
           <li>
             <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
             Home 
@@ -33,11 +33,11 @@ const Header = () => {
           </li>
 
 
-          <li>
+          {/* <li>
             <a href="/#contact" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
               Contact
             </a>
-          </li>
+          </li> */}
 
           <li>
             <ThemeToggle />
