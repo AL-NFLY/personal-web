@@ -77,6 +77,7 @@ const Experience = () => {
                 boxShadow: '0 3px #7dd3fc',
               }}
               contentArrowStyle={{borderRight: '7px solid #27272a'}}
+              
               date={item.date}
               icon={item.icon}
               iconStyle={{

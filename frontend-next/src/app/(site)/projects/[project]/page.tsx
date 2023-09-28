@@ -24,15 +24,15 @@ export default async function Project({ params }: Props){
                     />
 
                     <div className="flex flex-col items-start mt-6 max-sm:px-4">
-                        <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{project.name}</h1>
-                        <ul className="mt-1 list-inside list-disc px-3 text-sm text-zinc-300">
+                        <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">{project.name}</h1>
+                        <ul className="mt-1 list-inside list-disc px-3 text-sm text-zinc-500 dark:text-zinc-300">
                             <li>
                                 <a 
                                     href={project.url}
                                     title="View Project"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:font-bold hover:text-white duration-150"
+                                    className="hover:font-bold dark:hover:text-white duration-150"
                                     >
                                         Live Link
                                 </a>  
@@ -43,13 +43,14 @@ export default async function Project({ params }: Props){
                                     title="View Project"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:font-bold hover:text-white duration-150"
+                                    className="hover:font-bold dark:hover:text-white duration-150"
                                     >
                                         Github Link
                                 </a>    
+
                             </li>
                         </ul>
-                        <div className="mt-3 border-t pt-3 text-zinc-300">
+                        <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300">
                             <p>{project.overview}</p>
                             {/* <PortableText value={project.content} /> */}
                         </div>
