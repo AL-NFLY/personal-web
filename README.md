@@ -23,6 +23,7 @@ TODOs:
 - [x] Create Experience Section
 - [x] Create Profile Schema
 - [x] Create About app
+- [x] Add Darkmode
 - [ ] Create Projects app
 - [ ] Add three.js to the main page
 - [ ] Finalize individual Project blogs
