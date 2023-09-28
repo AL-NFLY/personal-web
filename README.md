@@ -1,11 +1,11 @@
 # Personal Portfolio Web
-An underdevelopment porfolio website made for a hands-on learning experience for Sanity.io as CMS and Typescript.
+An evergrowing porfolio website made for a hands-on learning experience for Sanity.io as Content Management System (CMS) and Typescript. Here is where I will document projects I have made, I'm making, or will be making in the future.
 
 Tech Stack:
 - Typescript
 - Next.js 13
 - Sanity.io
-- GROQ
+- GROQ 
 - TailwindCSS
 
 TODOs:
@@ -21,9 +21,9 @@ TODOs:
 - [x] Create Navbar
 - [x] Create Footer
 - [x] Create Experience Section
-- [ ] Create Profile Schema
-- [ ] Add three.js to the main page
+- [x] Create Profile Schema
+- [x] Create About app
 - [ ] Create Projects app
-- [ ] Create About app
+- [ ] Add three.js to the main page
 - [ ] Finalize individual Project blogs
 - [ ] Finalize front-end design
