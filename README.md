@@ -9,6 +9,11 @@ Tech Stack:
 - TailwindCSS
 
 TODOs:
+- [ ] Add project's content in Project Schema
+- [ ] Create Projects app
+- [ ] Add three.js to the main page
+- [ ] Finalize individual Project blogs
+- [ ] Finalize front-end design
 - [x] Installed Next.js
 - [x] Installed Sanity.io
 - [x] Integrating Sanity.io into Next.js
@@ -24,8 +29,3 @@ TODOs:
 - [x] Create Profile Schema
 - [x] Create About app
 - [x] Add Darkmode
-- [ ] Add project's content in Project Schema
-- [ ] Create Projects app
-- [ ] Add three.js to the main page
-- [ ] Finalize individual Project blogs
-- [ ] Finalize front-end design
