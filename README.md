@@ -24,6 +24,7 @@ TODOs:
 - [x] Create Profile Schema
 - [x] Create About app
 - [x] Add Darkmode
+- [ ] Add project's content in Project Schema
 - [ ] Create Projects app
 - [ ] Add three.js to the main page
 - [ ] Finalize individual Project blogs
