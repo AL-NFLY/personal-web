@@ -12,8 +12,10 @@ TODOs:
 - [ ] Add project's content in Project Schema
 - [ ] Create Projects app
 - [ ] Add three.js to the main page
+- [ ] Finish content of each individual project blogs
 - [ ] Finalize individual Project blogs
 - [ ] Finalize front-end design
+
 - [x] Installed Next.js
 - [x] Installed Sanity.io
 - [x] Integrating Sanity.io into Next.js
