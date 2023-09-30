@@ -18,6 +18,9 @@ const config: Config = {
         'secondary': '#FDA4AF',
         'dark': '#18181b',
       },
+      backgroundColor: {
+        'highlight': 'yellow',
+      }
     },
   },
   darkMode: 'class',
