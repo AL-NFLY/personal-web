@@ -1,4 +1,5 @@
 // import { getProject } from "@/sanity/sanity-utils";
+import { RichTextComponents } from "@/components/RichTextComponents";
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
@@ -52,7 +53,7 @@ export default async function Project({ params }: Props){
                         </ul>
                         <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300">
                             <p>{project.overview}</p>
-                            <PortableText value={project.content}  />
+                            <PortableText value={project.content} components={RichTextComponents} />
                         </div>
                     </div>
 

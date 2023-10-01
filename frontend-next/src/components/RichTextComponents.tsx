@@ -21,4 +21,21 @@ export const RichTextComponents = {
             <ol className="list-decimal list-inside">{children}</ol>
         ),
     },
+    marks: {
+        link: ({ children, value}: any) => {
+            const rel = !value.href.startsWith('/')
+                ? 'noreferrer noopener'
+                : undefined;
+            return (
+                <Link
+                    href={value.href}
+                    rel={rel}
+                    className="inline-flex items-center font-medium focus:outline-none focus-visible:ring focus-visible:ring-primary border-b border-dotted border-dark hover:border-black/0 cursor-newtab"
+                    // className="dark:bg-gradient-to-tr dark:from-primary dark:to-secondary dark:bg-clip-text dark:text-transparent"
+                >
+                    {children}
+                </Link>
+            )
+        }
+    },
 }
