@@ -9,9 +9,10 @@ type Props = {
 export default async function About() {
     // const slug = params.profile
     const profile = await getProfiles()
+
     return(
-        <main className="min-h-screen">
-            <section className="px-8 md:px-48 mt-16">
+        <main>
+            <section className="px-8 md:px-48 mt-16 mb-20 md:mb-60 xl:mb-72">
                 <>
                     <p className="font-semibold text-4xl">Aloha,</p>
                     <h1>
@@ -20,25 +21,19 @@ export default async function About() {
                     </h1>
                 </>
 
-                    <>
-                        {profile.map((author) => (
-                            <article className="flex max-sm:flex-col md:space-x-8 mt-6" key={author._id}>
-                                <div className="flex items-center justify-center">
-                                    <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image>
-                                </div>
-                                <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6">
-                                    {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aperiam, accusantium ad suscipit repellendus laborum temporibus adipisci itaque dolorum repellat cupiditate iusto id error laboriosam ratione inventore vero porro reiciendis!</p> */}
-                                    {/* <p className="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, itaque libero dolorem alias fuga odit facere nihil laborum reprehenderit quisquam molestias numquam atque perferendis minima eum at recusandae, ipsam error? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quod quas sit quasi dolorum fuga hic sapiente veniam, ullam nostrum, facilis repellat aspernatur? Ex veniam eligendi itaque sunt deserunt nemo?</p> */}
-                                    <PortableText value={author.description} />
-                                </div>
-                                <>
-                                </>
-                            </article>
-
-
-                        ))}
-                        
-                    </>
+                <>
+                    {profile.map((author) => (
+                        <article className="flex max-md:flex-col md:space-x-8 mt-6" key={author._id}>
+                            <div className="flex items-center justify-center">
+                                <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image>
+                            </div>
+                            <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6">
+                                <PortableText value={author.description}  />
+                            </div>
+                            
+                        </article>
+                    ))}
+                </>
             </section>
         </main>
     )

@@ -5,5 +5,5 @@ export type Profile = {
     _createdAt: Date;
     name: string;
     image: string;
-    description: PortableTextBlock[]
+    description: PortableTextBlock[];
 }

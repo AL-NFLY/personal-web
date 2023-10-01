@@ -41,7 +41,15 @@ const project = {
             name: "content",
             title: "Content",
             type: "array",
-            of: [{ type: "block" }] // rich text
+            of: [
+                { 
+                    type: "block",
+                    lists: [
+                        {title: 'Bullet', value: 'bullet'},
+                        {title: 'Numbered', value: 'number'}
+                      ],
+                }
+            ] // rich text
         },
     ],
 }

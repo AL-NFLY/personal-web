@@ -25,7 +25,15 @@ const profile = {
             name: 'description',
             title: 'Description',
             type: 'array',
-            of: [{ type: 'block' }]
+            of: [
+                { 
+                    type: 'block',
+                    lists: [
+                        {title: 'Bullet', value: 'bullet'},
+                        {title: 'Numbered', value: 'number'}
+                      ],
+                }
+            ]
         },
     ]
 }
