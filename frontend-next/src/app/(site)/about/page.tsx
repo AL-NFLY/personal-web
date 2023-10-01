@@ -1,3 +1,4 @@
+import { RichTextComponents } from "@/components/RichTextComponents"
 import { getProfiles } from "@/sanity/sanity-utils"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
@@ -28,7 +29,7 @@ export default async function About() {
                                 <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image>
                             </div>
                             <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6">
-                                <PortableText value={author.description}  />
+                                <PortableText value={author.description}  components={RichTextComponents}/>
                             </div>
                             
                         </article>
