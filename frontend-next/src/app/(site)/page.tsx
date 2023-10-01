@@ -14,7 +14,7 @@ export default async function Home() {
         <article>
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
           <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold">
-            I&apos;m <span className="bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">Almer</span>!
+            I&apos;m <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Almer</span>!
           </h1>
           <p className="mt-4 text-dark dark:text-zinc-300 tracking-wide">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
 

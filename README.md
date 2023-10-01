@@ -12,7 +12,7 @@ TODOs:
 - [ ] Add project's content in Project Schema
 - [ ] Create Projects app
 - [ ] Add three.js to the main page
-- [ ] Finish content of each individual project blogs
+- [ ] Finish content of each individual bproject blogs
 - [ ] Finalize individual Project blogs
 - [ ] Finalize front-end design
 

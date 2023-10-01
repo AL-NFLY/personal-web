@@ -11,7 +11,7 @@ const ProjectCards = async() => {
         <section className="min-h-screen">
             <article className="" id="projects">
             <h2 className="pt-20 md:pt-24" id="">
-                <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">Currated Projects</span>
+                <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Currated Projects</span>
             </h2>
             <p className="mt-2 dark:text-zinc-300 text-zinc-600">Here is a list of my projects, feel free to check them out!</p>
 
