@@ -52,7 +52,7 @@ export default async function Project({ params }: Props){
                         </ul>
                         <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300">
                             <p>{project.overview}</p>
-                            {/* <PortableText value={project.content} /> */}
+                            <PortableText value={project.content}  />
                         </div>
                     </div>
 
