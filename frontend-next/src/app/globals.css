@@ -7,7 +7,7 @@
   /* background-color: rgba(125,211,252, 0.5); */
 }
 
-@layer utilities {
+/* @layer utilities {
   h1 {
     @apply text-4xl md:text-5xl 2xl:text-6xl font-bold
   }
@@ -30,7 +30,7 @@
   ol {
     @apply list-decimal list-inside
   }
-}
+} */
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
