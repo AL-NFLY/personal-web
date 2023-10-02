@@ -28,7 +28,7 @@ export default async function About() {
                             <div className="flex items-center justify-center">
                                 <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image>
                             </div>
-                            <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6">
+                            <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3">
                                 <PortableText value={author.description}  components={RichTextComponents}/>
                             </div>
                             

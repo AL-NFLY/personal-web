@@ -12,6 +12,7 @@ export const RichTextComponents = {
         h4: ({ children }: any) => <h4 className="text-xl md:text-2xl 2xl:text-3xl font-bold">{children}</h4>,
         h5: ({ children }: any) => <h5 className="text-lg md:text-xl 2xl:text-2xl font-bold">{children}</h5>,
         h6: ({ children }: any) => <h6 className="text-base md:text-lg 2xl:text-xl font-bold">{children}</h6>,
+        blockquote: ({children}: any) => <blockquote className="border-l-primary">{children}</blockquote>,
     },
     list: {
         bullet: ({ children }: any) => (
