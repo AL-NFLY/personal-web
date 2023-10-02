@@ -31,8 +31,7 @@ export const RichTextComponents = {
                 <Link
                     href={value.href}
                     rel={rel}
-                    className="inline-flex items-center font-medium focus:outline-none focus-visible:ring focus-visible:ring-primary border-b border-dotted border-dark hover:border-black/0 cursor-newtab"
-                    // className="dark:bg-gradient-to-tr dark:from-primary dark:to-secondary dark:bg-clip-text dark:text-transparent"
+                    className="text-zinc-500 dark:text-zinc-300 font-semibold bg-gradient-to-r from-primary to-secondary bg-no-repeat bg-bottom bg-[length:0%_2px] hover:bg-[length:100%_2px] hover:no-underline transition-all"
                 >
                     {children}
                 </Link>
