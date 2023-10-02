@@ -13,7 +13,7 @@ export default async function About() {
 
     return(
         <main>
-            <section className="px-8 md:px-48 mt-16 mb-20 md:mb-60 xl:mb-72">
+            <section className="px-8 md:px-48 mt-3 md:mt-16 md:mb-60 xl:mb-72 max-md:min-h-screen">
                 <>
                     <p className="font-semibold text-4xl">Aloha,</p>
                     <h1>
@@ -24,14 +24,13 @@ export default async function About() {
 
                 <>
                     {profile.map((author) => (
-                        <article className="flex max-md:flex-col md:space-x-8 mt-6" key={author._id}>
+                        <article className="flex max-lg:flex-col lg:space-x-8 mt-6" key={author._id}>
                             <div className="flex items-center justify-center">
                                 <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image>
                             </div>
-                            <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3 max-md:text-sm ">
+                            <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3">
                                 <PortableText value={author.description}  components={RichTextComponents}/>
                             </div>
-                            
                         </article>
                     ))}
                 </>
