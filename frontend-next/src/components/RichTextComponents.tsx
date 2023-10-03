@@ -8,7 +8,7 @@ export const RichTextComponents = {
     block: {
         h1: ({ children }: any) => <h1 className="pt-4 text-4xl md:text-5xl 2xl:text-6xl font-bold text-dark dark:text-white">{children}</h1>,
         h2: ({ children }: any) => <h2 className="pt-4 text-3xl md:text-4xl 2xl:text-5xl font-bold text-dark dark:text-white">{children}</h2>,
-        h3: ({ children }: any) => <h3 className="pt-4 text-lg md:text-xl font-bold text-dark dark:text-white">{children}</h3>,
+        h3: ({ children }: any) => <h3 className="pt-4 text-xl font-bold text-dark dark:text-white">{children}</h3>,
         // h4: ({ children }: any) => <h4 className="text-xl md:text-2xl 2xl:text-3xl font-bold">{children}</h4>,
         // h5: ({ children }: any) => <h5 className="text-lg md:text-xl 2xl:text-2xl font-bold">{children}</h5>,
         // h6: ({ children }: any) => <h6 className="text-base md:text-lg 2xl:text-xl font-bold">{children}</h6>,
