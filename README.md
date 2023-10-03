@@ -14,7 +14,7 @@ TODOs:
 - [ ] Finalize individual Project blogs
 - [ ] Finalize front-end design
 
-
+finished
 - [x] ~~Installed Next.js~~
 - [x] ~~Installed Sanity.io~~
 - [x] ~~Integrating Sanity.io into Next.js~~
