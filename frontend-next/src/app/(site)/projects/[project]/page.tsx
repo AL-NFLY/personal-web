@@ -51,7 +51,7 @@ export default async function Project({ params }: Props){
 
                             </li>
                         </ul>
-                        <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300 space-y-4 md:space-y-5">
+                        <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300 space-y-4 leading-relaxed">
                             <p>{project.overview}</p>
                             <PortableText value={project.content} components={RichTextComponents} />
                         </div>
