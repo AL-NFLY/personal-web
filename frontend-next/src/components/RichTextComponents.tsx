@@ -16,10 +16,10 @@ export const RichTextComponents = {
     },
     list: {
         bullet: ({ children }: any) => (
-            <ul className="list-disc list-inside space-y-2">{children}</ul>
+            <ul className="list-disc list-outside pl-5 space-y-2">{children}</ul>
         ),
         number: ({ children }: any) => (
-            <ol className="list-decimal list-inside space-y-2">{children}</ol>
+            <ol className="list-decimal list-outside pl-5 space-y-2">{children}</ol>
         ),
     },
     marks: {
