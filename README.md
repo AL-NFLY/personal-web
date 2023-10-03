@@ -14,21 +14,20 @@ TODOs:
 - [ ] Finalize individual Project blogs
 - [ ] Finalize front-end design
 
-~~  
-- [x] Installed Next.js
-- [x] Installed Sanity.io
-- [x] Integrating Sanity.io into Next.js
-- [x] Add atleast one Sanity schema
-- [x] Setup atleast one TS typec
-- [x] Setup TailwindCSS
-- [x] Create Hero Section
-- [x] Create Project Section
-- [x] Deployment to Vercel
-- [x] Create Navbar
-- [x] Create Footer
-- [x] Create Experience Section
-- [x] Create Profile Schema
-- [x] Create About app
-- [x] Add Darkmode
-- [x] Add project's content in Project Schema
-~~
+
+- [x] ~~Installed Next.js~~
+- [x] ~~Installed Sanity.io~~
+- [x] ~~Integrating Sanity.io into Next.js~~
+- [x] ~~Add at least one Sanity schema~~
+- [x] ~~Setup at least one TS type~~
+- [x] ~~Setup TailwindCSS~~
+- [x] ~~Create Hero Section~~
+- [x] ~~Create Project Section~~
+- [x] ~~Deployment to Vercel~~
+- [x] ~~Create Navbar~~
+- [x] ~~Create Footer~~
+- [x] ~~Create Experience Section~~
+- [x] ~~Create Profile Schema~~
+- [x] ~~Create About app~~
+- [x] ~~Add Darkmode~~
+- [x] ~~Add project's content in Project Schema~~
