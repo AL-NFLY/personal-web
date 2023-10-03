@@ -13,8 +13,6 @@ TODOs:
 - [ ] Add three.js to the main page
 - [ ] Finalize individual Project blogs
 - [ ] Finalize front-end design
-
-<br>
 - [x] ~~Installed Next.js~~
 - [x] ~~Installed Sanity.io~~
 - [x] ~~Integrating Sanity.io into Next.js~~
