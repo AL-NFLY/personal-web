@@ -8,7 +8,7 @@ const ProjectCards = async() => {
     const projects = await getProjects();
 
     return (
-        <section className="min-h-screen">
+    <section className="">
             <article className="" id="projects">
             <h2 className="pt-20 md:pt-24" id="">
                 <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Currated Projects</span>

@@ -19,7 +19,7 @@ export default async function Home() {
           <p className="mt-4 text-dark dark:text-zinc-300 tracking-wide">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
 
           <div className="flex mt-6 gap-4">
-            <Link 
+            <Link
               href='https://drive.google.com/file/d/1dzMphHTvG-Fq3diGmdX1ymK69n07hGXq/view?usp=sharing'
               target="_blank"
               className="rounded-sm px-4 py-1 border hover:scale-105 bg-gradient-to-r from-primary to-secondary text-dark font-bold shadow-lg hover:shadow-secondary duration-300">
@@ -43,12 +43,14 @@ export default async function Home() {
 
       <Experience />
       <ProjectCards />
-
+      <article className="mt-6 mb-64">
       <Link
         href={'/projects'}
+        className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-md border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary duration-300"
       >
         View More Projects
       </Link>
+      </article>
     </main>
   )
 }
