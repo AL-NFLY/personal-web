@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <main className="px-48 max-sm:px-8 md:-mt-20 -mt-28">
+    <main className="min-h-screen px-48 max-sm:px-8 pt-3 -mt-16 md:-mt-20">
         <ProjectCards />
     </main>
   )
