@@ -43,7 +43,7 @@ export default async function Home() {
 
       <Experience />
       <ProjectCards />
-      <article className="mt-6 mb-64">
+      <article className="mt-6 mb-24 xl:mb-48">
       <Link
         href={'/projects'}
         className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-md border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary duration-300"
