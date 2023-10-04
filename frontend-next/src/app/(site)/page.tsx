@@ -43,6 +43,12 @@ export default async function Home() {
 
       <Experience />
       <ProjectCards />
+
+      <Link
+        href={'/projects'}
+      >
+        View More Projects
+      </Link>
     </main>
   )
 }

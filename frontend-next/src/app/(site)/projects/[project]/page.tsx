@@ -58,7 +58,6 @@ export default async function Project({ params }: Props){
                     </div>
 
                 </article>
-
             </section>
         </main>
     )
