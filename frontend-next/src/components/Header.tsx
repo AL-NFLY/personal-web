@@ -22,7 +22,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="/#projects" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
+            <a href="/projects" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
             Projects
             </a>
           </li>
@@ -32,13 +32,6 @@ const Header = () => {
             About
             </a>
           </li>
-
-
-          {/* <li>
-            <a href="/#contact" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300'>
-              Contact
-            </a>
-          </li> */}
 
           <li>
             <ThemeToggle />
