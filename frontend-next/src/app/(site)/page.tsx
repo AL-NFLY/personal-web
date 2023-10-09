@@ -20,7 +20,7 @@ export default async function Home() {
 
           <div className="flex mt-6 gap-4">
             <Link
-              href='https://drive.google.com/file/d/1dzMphHTvG-Fq3diGmdX1ymK69n07hGXq/view?usp=sharing'
+              href='https://drive.google.com/file/d/1SVcxmopbjgWPImLW-GdryXJAZv1jGiOy/view?usp=sharing'
               target="_blank"
               className="rounded-sm px-4 py-1 border hover:scale-105 bg-gradient-to-r from-primary to-secondary text-dark font-bold shadow-lg hover:shadow-secondary duration-300">
               View my CV
