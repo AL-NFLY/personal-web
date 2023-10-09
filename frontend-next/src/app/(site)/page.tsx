@@ -22,13 +22,13 @@ export default async function Home() {
             <Link
               href='https://drive.google.com/file/d/1SVcxmopbjgWPImLW-GdryXJAZv1jGiOy/view?usp=sharing'
               target="_blank"
-              className="rounded-sm px-4 py-1 border hover:scale-105 bg-gradient-to-r from-primary to-secondary text-dark font-bold shadow-lg hover:shadow-secondary duration-300">
+              className="rounded-sm px-4 py-1 border dark:border-none hover:scale-105 bg-gradient-to-r from-primary to-secondary text-dark font-bold shadow-lg hover:shadow-secondary active:scale-100 duration-300">
               View my CV
             </Link>
             <Link
               href='https://github.com/AL-NFLY'
               target="_blank"
-              className="rounded-sm px-4 py-1 border dark:border-gray-500 hover:scale-105  font-bold shadow-lg hover:shadow-primary duration-300"
+              className="rounded-sm px-4 py-1 border dark:border-gray-500 hover:scale-105 font-bold shadow-lg hover:shadow-primary active:scale-100 duration-300"
             >
               Visit my Github
             </Link>
@@ -38,7 +38,7 @@ export default async function Home() {
           </div>
         </article>
         <Link className="absolute bottom-8 md:bottom-12 rounded-full transition-colors duration-300" href='#experience'>
-          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse active:animate-none md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary '/>
+          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse active:animate-none md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary active:scale-95 '/>
         </Link>
       </section>
 
@@ -46,12 +46,14 @@ export default async function Home() {
       <ProjectCards />
 
       <section className="mt-6 mb-24 xl:mb-48">
-        <Link
-          href={'/projects'}
-          className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-sm border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary duration-300"
-        >
-          View More Projects
-        </Link>
+        <div className="flex">
+          <Link
+            href={'/projects'}
+            className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-sm border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary hover: active:scale-95 duration-300"
+            >
+            View More Projects
+          </Link>
+        </div>
       </section>
 
       
