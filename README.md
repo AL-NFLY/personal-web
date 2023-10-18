@@ -10,9 +10,9 @@ Tech Stack:
 
 TODOs:
 - [ ] Finalize individual Project blogs
-- [ ] Add three.js to the main page
+- [ ] Add three.js to the main page 
 - [ ] Finalize front-end design
-- [x] Create Projects app
+- [x] ~~Create Projects app~~
 - [x] ~~Installed Next.js~~
 - [x] ~~Installed Sanity.io~~
 - [x] ~~Integrating Sanity.io into Next.js~~
@@ -29,3 +29,4 @@ TODOs:
 - [x] ~~Create About app~~
 - [x] ~~Add Darkmode~~
 - [x] ~~Add project's content in Project Schema~~
+- [x] ~~Seperate currated & overall projects~~
