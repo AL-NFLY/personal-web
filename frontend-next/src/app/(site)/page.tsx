@@ -4,6 +4,7 @@ import Link from "next/link";
 import Experience from "@/components/Experience";
 import ProjectCards from "@/components/ProjectCards";
 import { IoCaretDown } from "react-icons/io5";
+import CurratedProjectCards from "@/components/CurratedProjectCards";
 // import { PortableText } from "@portabletext/react";
 
 
@@ -43,7 +44,7 @@ export default async function Home() {
       </section>
 
       <Experience />
-      <ProjectCards />
+      <CurratedProjectCards />
 
       <section className="mt-6 mb-24 xl:mb-48">
         <div className="flex">

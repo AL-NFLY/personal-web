@@ -4,18 +4,19 @@ import Link from 'next/link'
 import React from 'react'
 
 
-const ProjectCards = async() => {
+const CurratedProjectCards = async() => {
     const projects = await getProjects();
+    const selectedProjects = projects.splice(1, 3);
     
     return (
     <section className="">
             <article className="" id="projects">
             <h2 className="pt-20 md:pt-24" id="">
-                <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Project Catalog</span>
+                <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Currated Projects</span>
             </h2>
-            <p className="mt-2 dark:text-zinc-300 text-zinc-600">Here is a complete list of my projects, feel free to check them out!</p>
+            <p className="mt-2 dark:text-zinc-300 text-zinc-600">Here is a list of my projects, feel free to check them out!</p>
 
-            <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">{projects.map((project) => (
+            <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">{selectedProjects.map((project) => (
                 <li 
                 className="flex justify-center items-center group rounded-lg border border-b-4 border-zinc-300 dark:border-zinc-500 hover:border-b-primary dark:hover:border-b-primary hover:-translate-y-2 active:scale-[0.98] duration-300 transition-all"
                 key={project._id}
@@ -49,4 +50,4 @@ const ProjectCards = async() => {
   )
 }
 
-export default ProjectCards
+export default CurratedProjectCards
