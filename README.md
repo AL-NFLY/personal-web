@@ -17,7 +17,7 @@ TODOs:
 - [x] ~~Installed Sanity.io~~
 - [x] ~~Integrating Sanity.io into Next.js~~
 - [x] ~~Add at least one Sanity schema~~
-- [x] ~~Setup at least one TS type~~
+- [x] ~~Setup at least one Sanity type~~
 - [x] ~~Setup TailwindCSS~~
 - [x] ~~Create Hero Section~~
 - [x] ~~Create Project Section~~
