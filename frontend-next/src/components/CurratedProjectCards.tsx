@@ -6,7 +6,7 @@ import React from 'react'
 
 const CurratedProjectCards = async() => {
     const projects = await getProjects();
-    const selectedProjects = projects.splice(1, 3);
+    const selectedProjects = projects.splice(0, 3);
     
     return (
     <section className="">
@@ -14,7 +14,7 @@ const CurratedProjectCards = async() => {
             <h2 className="pt-20 md:pt-24" id="">
                 <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Currated Projects</span>
             </h2>
-            <p className="mt-2 dark:text-zinc-300 text-zinc-600">Here is a list of my projects, feel free to check them out!</p>
+            <p className="mt-2 dark:text-zinc-300 text-zinc-600">Here is a list of some of my best projects, feel free to check them out!</p>
 
             <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">{selectedProjects.map((project) => (
                 <li 
