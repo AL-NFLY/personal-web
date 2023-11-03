@@ -1,4 +1,5 @@
 # Personal Portfolio Web
+![Website Thumbnail](frontend-next/public/images/hero.png)
 An evergrowing porfolio website made for a hands-on learning experience for Sanity.io as Content Management System (CMS) and Typescript. Here is where I will document projects I have made, I'm making, or will be making in the future.
 
 Tech Stack:
