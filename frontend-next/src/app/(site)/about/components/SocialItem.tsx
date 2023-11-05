@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { IconType } from 'react-icons';
-import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp, IoMail } from 'react-icons/io5';
 
 interface SocialItemProps {
     id: string;
@@ -25,14 +25,21 @@ const socials: SocialItemProps[] = [
         icon: IoLogoGithub,
         at: 'github/AL-NFLY',
         alt: 'Github Logo',
-      },
-      {
+    },
+    {
         href: 'mailto://almer.nfly@gmail.com',
         icon: IoMail,
         id: 'Email',
         at: 'almer.nfly@gmail.com',
-        alt: 'email logo',
+        alt: 'E`mail Logo',
     },
+    {
+        href: 'https://wa.me/6281210606779',
+        icon: IoLogoWhatsapp,
+        id: 'Whatsapp',
+        at: '(62) 8121-0606-779',
+        alt: 'Whatsapp Logo'
+    }
 ]
 
 const SocialItem = () => {
