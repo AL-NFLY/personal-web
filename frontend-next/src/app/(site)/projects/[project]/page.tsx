@@ -14,8 +14,8 @@ export default async function Project({ params }: Props){
 
     return(
         <main className="min-h-screen">
-            <section className="max-w-3xl mx-auto">
-                <article>
+            <article className="max-w-3xl mx-auto">
+                <>
                     <Image 
                         src={project.image}
                         alt={project.name}
@@ -57,8 +57,8 @@ export default async function Project({ params }: Props){
                         </div>
                     </div>
 
-                </article>
-            </section>
+                </>
+            </article>
         </main>
     )
 }
