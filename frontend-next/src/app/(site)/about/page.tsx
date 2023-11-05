@@ -25,7 +25,7 @@ export default async function About() {
 
                 <>
                     {profile.map((author) => (
-                        <article className="flex max-lg:flex-col lg:space-x-8 mt-6" key={author._id}>
+                        <article className="flex max-xl:flex-col lg:space-x-8 mt-6" key={author._id}>
                             <div className="flex items-center justify-center">
                                 {/* <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image> */}
                                 <Image
@@ -36,7 +36,7 @@ export default async function About() {
                                     className="w-48 h-auto aspect-[3/4] object-cover"
                                 />
                             </div>
-                            <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3">
+                            <div className="flex flex-col 2xl:max-w-2xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3">
                                 <PortableText value={author.description}  components={RichTextComponents}/>
                             </div>
                             <SocialItem />
