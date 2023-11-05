@@ -2,6 +2,7 @@ import { RichTextComponents } from "@/components/RichTextComponents"
 import { getProfiles } from "@/sanity/sanity-utils"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
+import SocialItem from "./components/SocialItem"
 
 type Props = {
     params: { profile: string }
@@ -31,6 +32,7 @@ export default async function About() {
                             <div className="max-w-xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3">
                                 <PortableText value={author.description}  components={RichTextComponents}/>
                             </div>
+                            <SocialItem />
                         </article>
                     ))}
                 </>
