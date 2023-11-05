@@ -38,7 +38,7 @@ const socials: SocialItemProps[] = [
 const SocialItem = () => {
   return (
     <div>
-        <ul>
+        <ul className='flex flex-col gap-y-2 max-sm:mt-4'>
             {socials.map((social) => (
                 <li
                     key={social.id}
@@ -46,13 +46,14 @@ const SocialItem = () => {
                     <Link
                         href={social.href}
                         target='_blank'
+                        className='flex items-center w-full py-2 px-4 gap-x-3 rounded-md hover:bg-zinc-800/50'
                     >
                         <>
-                            <social.icon className='w-9 h-auto' />
+                            <social.icon className='w-8 h-auto' />
                         </>
-                        <div className='truncate'>
-                            <p>{social.id}</p>
-                            <p className='text-xs'>{social.at}</p>
+                        <div className='flex flex-col overflow-hidden font-medium truncate'>
+                            <p className='text-sm'>{social.id}</p>
+                            <p className='text-xs text-zinc-400'>{social.at}</p>
                         </div>
                     </Link>
                 </li>
