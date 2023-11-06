@@ -1,8 +1,29 @@
 'use client'
 import Link from 'next/link'
+import { usePathname } from "next/navigation";
 import ThemeToggle from './ThemeToggle'
 import { useTheme } from 'next-sanity/studio'
+import { useMemo } from 'react'
+
 const Header = () => {
+  const pathname = usePathname()
+  const routes = useMemo(() => [
+    {
+      label: 'Home',
+      href: '/',
+      active: pathname === '/',
+    },
+    {
+      label: 'Projects',
+      href: '/',
+      active: pathname === '/projects',
+    },
+    {
+      label: 'About',
+      href: '/about',
+      active: pathname === '/about'
+    }
+  ], [pathname]);
 
   return (
     <header className='sticky top-0 z-50'>
@@ -15,7 +36,6 @@ const Header = () => {
         </Link>
         <ul className='flex items-center gap-12 max-sm:gap-6 font-semibold max-sm:text-sm '>
           <li>
-            {/* <a href="/" className='hover:bg-gradient-to-r from-primary to-secondary dark:hover:bg-clip-text dark:hover:text-transparent duration-300]'> */}
             <a href="/" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
             Home 
             </a>
