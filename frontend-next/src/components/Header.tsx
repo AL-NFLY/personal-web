@@ -15,7 +15,7 @@ const Header = () => {
     },
     {
       label: 'Projects',
-      href: '/',
+      href: '/projects',
       active: pathname === '/projects',
     },
     {
@@ -34,7 +34,27 @@ const Header = () => {
           >
         AL
         </Link>
-        <ul className='flex items-center gap-12 max-sm:gap-6 font-semibold max-sm:text-sm '>
+
+        <ul className='flex items-center gap-x-6 md:gap-x-12'>
+          {routes.map((item) => (
+            <li 
+              key={item.label}
+              className='font-semibold text-sm md:text-base' 
+            >
+              <Link 
+                href={item.href}
+                aria-labelledby={item.label}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <ThemeToggle />
+          </li>
+        </ul>
+
+        {/* <ul className='flex items-center gap-12 max-sm:gap-6 font-semibold max-sm:text-sm '>
           <li>
             <a href="/" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
             Home 
@@ -56,7 +76,7 @@ const Header = () => {
           <li>
             <ThemeToggle />
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   )
