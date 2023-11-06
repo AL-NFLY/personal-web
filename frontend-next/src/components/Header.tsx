@@ -32,7 +32,7 @@ const Header = () => {
       <nav className='flex justify-between items-center px-48 max-sm:px-8 py-4 dark:bg-dark bg-white shadow-sm dark:shadow-none'>
         <Link
           href='/'
-          className='flex font-extrabold text-3xl px-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105'
+          className='flex font-extrabold text-3xl px-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 active:scale-100'
           >
         AL
         </Link>
