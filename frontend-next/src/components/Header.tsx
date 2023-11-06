@@ -18,7 +18,7 @@ const Header = () => {
     {
       label: 'Projects',
       href: '/projects',
-      active: pathname === '/projects',
+      active: pathname.startsWith('/projects'),
     },
     {
       label: 'About',
