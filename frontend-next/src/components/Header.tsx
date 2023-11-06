@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import ThemeToggle from './ThemeToggle'
 import { useTheme } from 'next-sanity/studio'
 import { useMemo } from 'react'
+import { twMerge } from "tailwind-merge";
+import NavList from './NavList';
 
 const Header = () => {
   const pathname = usePathname()
@@ -41,12 +43,9 @@ const Header = () => {
               key={item.label}
               className='font-semibold text-sm md:text-base' 
             >
-              <Link 
-                href={item.href}
-                aria-labelledby={item.label}
-              >
-                {item.label}
-              </Link>
+              <NavList 
+                {...item}
+              />
             </li>
           ))}
           <li>
@@ -54,29 +53,6 @@ const Header = () => {
           </li>
         </ul>
 
-        {/* <ul className='flex items-center gap-12 max-sm:gap-6 font-semibold max-sm:text-sm '>
-          <li>
-            <a href="/" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
-            Home 
-            </a>
-          </li>
-
-          <li>
-            <a href="/projects" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
-            Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="/about" className='bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] active:bg-[length:100%_100%] transition-all'>
-            About
-            </a>
-          </li>
-
-          <li>
-            <ThemeToggle />
-          </li>
-        </ul> */}
       </nav>
     </header>
   )
