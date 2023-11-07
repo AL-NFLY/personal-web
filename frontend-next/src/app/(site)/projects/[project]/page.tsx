@@ -4,6 +4,7 @@ import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
+import { IoLink, IoLogoGithub } from "react-icons/io5";
 
 type Props = {
     params: { project: string }
@@ -35,7 +36,9 @@ export default async function Project({ params }: Props){
                                     rel="noopener noreferrer"
                                     className="flex gap-x-2 hover:font-bold dark:hover:text-white duration-150"
                                 >
-
+                                    <IoLink
+                                        className="w-5 h-auto"
+                                    />
                                     Live Link
                                 </Link>
                             </li>
@@ -46,6 +49,9 @@ export default async function Project({ params }: Props){
                                     rel="noopener noreferrer"
                                     className="flex gap-x-2 hover:font-bold dark:hover:text-white duration-150 "
                                 >
+                                    <IoLogoGithub 
+                                        className="w-5 h-auto"
+                                        />
                                     Github Link
                                 </Link>
                             </li>
