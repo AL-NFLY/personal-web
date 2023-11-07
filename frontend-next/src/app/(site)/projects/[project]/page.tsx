@@ -3,6 +3,7 @@ import { RichTextComponents } from "@/components/RichTextComponents";
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
     params: { project: string }
@@ -26,29 +27,27 @@ export default async function Project({ params }: Props){
 
                     <div className="flex flex-col items-start mt-6 max-sm:px-4">
                         <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">{project.name}</h1>
-                        <ul className="mt-1 list-inside list-disc px-3 text-sm text-zinc-500 dark:text-zinc-300">
+                        <ul className="flex flex-col gap-y-2 px-3 mt-1 text-sm text-zinc-500 dark:text-zinc-300">
                             <li>
-                                <a 
+                                <Link
                                     href={project.url}
-                                    title="View Project"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:font-bold dark:hover:text-white duration-150"
-                                    >
-                                        Live Link
-                                </a>  
+                                    className="flex gap-x-2 hover:font-bold dark:hover:text-white duration-150"
+                                >
+
+                                    Live Link
+                                </Link>
                             </li>
                             <li>
-                                <a 
+                                <Link
                                     href='https://github.com/AL-NFLY/'
-                                    title="View Project"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:font-bold dark:hover:text-white duration-150"
-                                    >
-                                        Github Link
-                                </a>    
-
+                                    className="flex gap-x-2 hover:font-bold dark:hover:text-white duration-150 "
+                                >
+                                    Github Link
+                                </Link>
                             </li>
                         </ul>
                         <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300 space-y-4 leading-relaxed">
