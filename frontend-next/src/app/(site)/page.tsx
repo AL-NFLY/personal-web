@@ -10,7 +10,7 @@ import CurratedProjectCards from "@/components/CurratedProjectCards";
 
 export default async function Home() {
   return (
-    <main className="px-48 max-sm:px-8 md:-mt-20 -mt-28">
+    <main className="px-8 md:px-48 md:-mt-20 -mt-28">
       <section className="flex flex-col items-center justify-center min-h-screen ">
         <article>
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
