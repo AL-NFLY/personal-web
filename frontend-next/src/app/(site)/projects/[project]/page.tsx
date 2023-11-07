@@ -28,18 +28,18 @@ export default async function Project({ params }: Props){
 
                     <div className="flex flex-col items-start mt-6 max-sm:px-4">
                         <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary dark:bg-clip-text dark:text-transparent">{project.name}</h1>
-                        <ul className="flex flex-col gap-y-2 px-3 mt-1 text-sm text-zinc-500 dark:text-zinc-300">
+                        <ul className="flex flex-col gap-y-1 px-3 mt-2 text-sm text-zinc-500 dark:text-zinc-300">
                             <li>
                                 <Link
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex gap-x-2 group"
+                                    className="flex items-center gap-x-2 group"
                                 >
                                     <IoLink
-                                        className="w-5 h-auto"
+                                        className="w-6 h-auto"
                                     />
-                                    <p className="bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
+                                    <p className="text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
                                         Live Link
                                     </p>
                                 </Link>
@@ -49,12 +49,12 @@ export default async function Project({ params }: Props){
                                     href='https://github.com/AL-NFLY/'
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex gap-x-2 group"
+                                    className="flex items-center gap-x-2 group"
                                 >
                                     <IoLogoGithub 
-                                        className="w-5 h-auto"
+                                        className="w-6 h-auto"
                                         />
-                                    <p className="bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
+                                    <p className="text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
                                         Github Link
                                     </p>
                                 </Link>
