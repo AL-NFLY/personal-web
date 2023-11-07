@@ -34,12 +34,14 @@ export default async function Project({ params }: Props){
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex gap-x-2 hover:font-bold dark:hover:text-white duration-150"
+                                    className="flex gap-x-2 group"
                                 >
                                     <IoLink
                                         className="w-5 h-auto"
                                     />
-                                    Live Link
+                                    <p className="bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
+                                        Live Link
+                                    </p>
                                 </Link>
                             </li>
                             <li>
@@ -47,12 +49,14 @@ export default async function Project({ params }: Props){
                                     href='https://github.com/AL-NFLY/'
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex gap-x-2 hover:font-bold dark:hover:text-white duration-150 "
+                                    className="flex gap-x-2 group"
                                 >
                                     <IoLogoGithub 
                                         className="w-5 h-auto"
                                         />
-                                    Github Link
+                                    <p className="bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
+                                        Github Link
+                                    </p>
                                 </Link>
                             </li>
                         </ul>
