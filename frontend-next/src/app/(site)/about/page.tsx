@@ -14,7 +14,7 @@ export default async function About() {
 
     return(
         <main>
-            <section className="px-8 md:px-48 mt-3 md:mt-16 md:mb-60 xl:mb-72 max-md:min-h-screen">
+            <section className="px-8 md:px-48 mt-3 md:mt-16 md:mb-60 xl:mb-72">
                 <>
                     <p className="font-semibold text-4xl">Aloha,</p>
                     <h1>
@@ -27,7 +27,6 @@ export default async function About() {
                     {profile.map((author) => (
                         <article className="flex max-xl:flex-col lg:space-x-8 mt-6" key={author._id}>
                             <div className="flex items-center justify-center">
-                                {/* <Image src={author.image} alt={author.name} width={175} height={300} className="rounded-sm"></Image> */}
                                 <Image
                                     src={author.image}
                                     alt={author.name}

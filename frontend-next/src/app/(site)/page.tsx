@@ -46,11 +46,23 @@ export default async function Home() {
       <Experience />
       <CurratedProjectCards />
 
-      <section className="mt-6 mb-24 xl:mb-48">
+      {/* <section className="mt-6 mb-24 xl:mb-48">
         <div className="flex">
           <Link
             href={'/projects'}
             className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-sm border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary hover: active:scale-95 duration-300"
+            >
+            View More Projects
+          </Link>
+        </div>
+      </section> */}
+
+      <section className="mt-6 mb-24 xl:mb-48">
+        <div className="flex">
+          <Link
+            href={'/projects'}
+            // className="px-6  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 rounded-md bg-zinc-800/50 hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 duration-300"
+            className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-sm border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary active:scale-95 duration-300"
             >
             View More Projects
           </Link>

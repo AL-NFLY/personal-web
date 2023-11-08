@@ -53,7 +53,7 @@ const SocialItem = () => {
                     <Link
                         href={social.href}
                         target='_blank'
-                        className='flex items-center w-full py-2 px-4 gap-x-3 rounded-md dark:hover:bg-zinc-800/50 hover:bg-zinc-50'
+                        className='flex items-center w-full py-2 px-4 gap-x-3 rounded-md dark:hover:bg-zinc-800/50 hover:bg-zinc-50 active:scale-95 duration-150'
                     >
                         <>
                             <social.icon className='w-8 h-auto' />
