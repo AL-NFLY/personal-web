@@ -29,8 +29,8 @@ const CurratedProjectCards = async() => {
                                     alt={project.name}
                                     width={500}
                                     height={250}
-                                    // className="object-cover overflow-hidden aspect-[16/10] rounded-lg w-full h-auto"
-                                    className=" object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
+                                    className="object-cover overflow-hidden aspect-[16/10] rounded-lg w-full h-auto"
+                                    // className=" object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
                                     />
                                 )}
                             
