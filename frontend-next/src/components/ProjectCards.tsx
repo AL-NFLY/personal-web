@@ -34,8 +34,8 @@ const ProjectCards = async() => {
                                 )}
                             
                             <div className="px-6 py-4 max-sm:px-4 max-sm:py-3">
-                                <span className="font-extrabold text-sm lg:text-base dark:text-primary group-hover:bg-gradient-to-r from-primary to-secondary group-hover:dark:bg-clip-text group-hover:dark:text-transparent group-hover:bg-red-300 duration-50">
-                                {project.name}
+                                <span className="font-extrabold text-sm lg:text-base tracking-tight md:tracking-normal dark:text-primary group-hover:bg-gradient-to-r from-primary to-secondary group-hover:dark:bg-clip-text group-hover:dark:text-transparent group-hover:bg-red-300 duration-50">
+                                    {project.name}
                                 </span>
                                 <div className="mt-1 text-xs lg:text-sm text-zinc-600 dark:text-zinc-300">
                                     <p className='tracking-wide line-clamp-6 2xl:line-clamp-4'>{project.overview}</p>
