@@ -73,16 +73,16 @@ const Experience = () => {
           <React.Fragment key={index}>
             <VerticalTimelineElement 
               contentStyle={{
-                background: '#27272a',
+                background: '#202022',
                 boxShadow: '0 3px #7dd3fc',
               }}
-              contentArrowStyle={{borderRight: '7px solid #27272a'}}
+              contentArrowStyle={{borderRight: '7px solid #202022'}}
               
               date={item.date}
               icon={item.icon}
               iconStyle={{
                 background: 'white',
-                color: '#27272a',
+                color: '#202022',
               }}
               className="text-zinc-400 xl:text-zinc-500 dark:text-zinc-300"
               >
