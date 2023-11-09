@@ -74,7 +74,7 @@ const Experience = () => {
             <VerticalTimelineElement 
               contentStyle={{
                 background: '#202022',
-                boxShadow: '0 3px #7dd3fc',
+                boxShadow: '0 4px #7dd3fc',
               }}
               contentArrowStyle={{borderRight: '7px solid #202022'}}
               
@@ -85,7 +85,7 @@ const Experience = () => {
                 color: '#202022',
               }}
               className="text-zinc-400 xl:text-zinc-500 dark:text-zinc-300"
-              >
+            >
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{item.title}</span>
               <p className="text-zinc-400 !mt-0 !text-sm">{item.location}</p>
               <ul className="list-disc iniside list-inside mt-3 space-y-1 text-sm text-zinc-300 tracking-wide">
