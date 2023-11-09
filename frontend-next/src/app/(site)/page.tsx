@@ -1,13 +1,6 @@
-import Image from "next/image";
-import { getProjects } from "@/sanity/sanity-utils";
-import Link from "next/link";
 import Experience from "@/components/Experience";
-import ProjectCards from "@/components/ProjectCards";
-import { IoCaretDown } from "react-icons/io5";
 import CurratedProjectCards from "@/components/CurratedProjectCards";
 import Hero from "@/components/Hero";
-// import { PortableText } from "@portabletext/react";
-
 
 export default async function Home() {
   return (
