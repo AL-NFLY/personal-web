@@ -10,7 +10,7 @@ const CurratedProjectCards = async() => {
     
     return (
     <section className="">
-            <article className="" id="projects">
+        <article className="" id="projects">
             <h2 className="pt-20 md:pt-24" id="">
                 <span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Currated Projects</span>
             </h2>
@@ -47,8 +47,18 @@ const CurratedProjectCards = async() => {
                 </li>
             ))}
             </ul>
-            </article>
-        </section>
+
+            <div className="flex mt-6 mb-24 xl:mb-48">
+                <Link
+                    href={'/projects'}
+                    className="px-6 py-2 font-bold text-sm text-black dark:text-zinc-300 rounded-md bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 duration-300 max-sm:w-full max-sm:text-center"
+                    // className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-sm border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary active:scale-95 duration-300"
+                >
+                    View More Projects
+                </Link>
+            </div>
+        </article>
+    </section>
   )
 }
 
