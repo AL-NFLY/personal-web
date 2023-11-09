@@ -40,7 +40,7 @@ const ProjectCards = async() => {
                                 <div className="mt-1 text-xs lg:text-sm text-zinc-600 dark:text-zinc-300">
                                     <p className='tracking-wide line-clamp-6 2xl:line-clamp-4'>{project.overview}</p>
                                 </div>
-                                <p className="text-xs lg:text-sm pt-4 max-sm:pt-3"> Read More →</p>
+                                <p className="text-xs lg:text-sm pt-3 md:pt-4 pb-1.5 md:pb-2">Read More →</p>
                             </div>  
                         </Link>
                 </li>
