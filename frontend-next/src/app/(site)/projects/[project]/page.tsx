@@ -1,4 +1,3 @@
-// import { getProject } from "@/sanity/sanity-utils";
 import { RichTextComponents } from "@/components/RichTextComponents";
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
@@ -36,9 +35,7 @@ export default async function Project({ params }: Props){
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-x-2 group"
                                 >
-                                    <IoLink
-                                        className="w-6 h-auto"
-                                    />
+                                    <IoLink className="w-6 h-auto" />
                                     <p className="text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
                                         Live Link
                                     </p>
@@ -51,9 +48,7 @@ export default async function Project({ params }: Props){
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-x-2 group"
                                 >
-                                    <IoLogoGithub 
-                                        className="w-6 h-auto"
-                                    />
+                                    <IoLogoGithub className="w-6 h-auto" />
                                     <p className="text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
                                         Github Link
                                     </p>
@@ -62,7 +57,10 @@ export default async function Project({ params }: Props){
                         </ul>
                         <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300 space-y-4 leading-relaxed">
                             <p>{project.overview}</p>
-                            <PortableText value={project.content} components={RichTextComponents} />
+                            <PortableText 
+                                value={project.content} 
+                                components={RichTextComponents} 
+                            />
                         </div>
                     </div>
 
