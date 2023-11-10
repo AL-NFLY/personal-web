@@ -51,7 +51,9 @@ const CurratedProjectCards = async() => {
                                         />
                                         <>
                                             {CurratedProjectTags.map((item) => (
-                                                <div className='absolute p-1 rounded-md right-4 bottom-44 translate-y-3 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 text-xs bg-black/50 duration-300'>
+                                                <div
+                                                    key={item.id} 
+                                                    className='absolute p-1 rounded-md right-4 bottom-44 translate-y-3 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 text-xs bg-black/50 duration-300'>
                                                     {item.id}
                                                 </div>
                                             ))}
