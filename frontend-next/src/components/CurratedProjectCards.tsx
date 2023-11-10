@@ -2,7 +2,23 @@ import { getProjects } from '@/sanity/sanity-utils';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
+import { IconType } from 'react-icons';
+import { IoLogoJavascript } from 'react-icons/io5';
 
+interface CurratedProjectTagsProps {
+    id: string;
+    icon: IconType;
+    alt: string;
+}
+
+// Placeholder, replace once schema is updated!
+const CurratedProjectTags: CurratedProjectTagsProps[] = [
+    {
+        id: '#webdev #js',
+        icon: IoLogoJavascript,
+        alt: 'Javascript Logo',
+    }
+]
 
 const CurratedProjectCards = async() => {
     const projects = await getProjects();
@@ -19,19 +35,28 @@ const CurratedProjectCards = async() => {
             <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">{selectedProjects.map((project) => (
                 <li 
                 // className="flex justify-center items-center group rounded-lg border border-b-4 border-zinc-300 dark:border-zinc-500 hover:border-b-primary dark:hover:border-b-primary hover:-translate-y-2 active:scale-[0.98] duration-300 transition-all"
-                className="flex justify-center items-center group px-2 pt-2 rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-300 dark:from-zinc-500 dark:to-zinc-500 hover:from-primary hover:to-secondary dark:hover:from-primary dark:hover:to-secondary bg-bottom bg-no-repeat bg-[length:100%_4px] bg-zinc-100/50 hover:bg-zinc-200/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-2 active:-translate-y-0.5 duration-300"
+                className="group flex justify-center items-center group px-2 pt-2 rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-300 dark:from-zinc-500 dark:to-zinc-500 hover:from-primary hover:to-secondary dark:hover:from-primary dark:hover:to-secondary bg-bottom bg-no-repeat bg-[length:100%_4px] bg-zinc-100/50 hover:bg-zinc-200/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-2 active:-translate-y-0.5 duration-300"
                 key={project._id}
                 >
                         <Link href={`/projects/${project.slug}`}>
                             {project.image && (
-                                    <Image
-                                    src={project.image}
-                                    alt={project.name}
-                                    width={500}
-                                    height={250}
-                                    className="object-cover overflow-hidden aspect-[16/10] rounded-lg w-full h-auto"
-                                    // className=" object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
-                                    />
+                                    <>
+                                        <Image
+                                        src={project.image}
+                                        alt={project.name}
+                                        width={500}
+                                        height={250}
+                                        className="object-cover overflow-hidden aspect-[16/10] rounded-lg w-full h-auto"
+                                        // className=" object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
+                                        />
+                                        <>
+                                            {CurratedProjectTags.map((item) => (
+                                                <div className='absolute p-1 rounded-md right-4 bottom-44 translate-y-3 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 text-xs bg-black/50 duration-300'>
+                                                    {item.id}
+                                                </div>
+                                            ))}
+                                        </>
+                                    </>
                                 )}
                             
                             <div className="px-6 py-4 max-sm:px-4 max-sm:py-3">

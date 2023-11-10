@@ -37,12 +37,15 @@ const Footer = () => {
     <footer className='xl:px-48 max-sm:px-8 pb-2' id="contact">
       <main className='mt-12 flex flex-col flex-wrap items-center border-t border-zinc-500 text-zinc-600 dark:text-zinc-300'>
         <p className="mt-8">Hit me up!</p>
-        <div className='flex space-x-4'>
+        <div className='flex space-x-4 mt-1'>
           {socials.map((social) => (
             <>
-              <Link href={social.href} target='_blank' className=""
+              <Link 
+                href={social.href} 
+                target='_blank' 
+                className="group rounded-md bg-gradient-to-r hover:from-primary hover:to-secondary bg-bottom bg-no-repeat bg-[length:0_3px] hover:bg-[length:100%_3px] duration-150"
               >
-                <social.icon className="mt-1 h-9 w-9 p-1 rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:text-dark hover:scale-105 active:scale-95 duration-150"/>
+                <social.icon className="w-9 h-auto p-1 group-hover:-translate-y-1 group-active:-translate-y-0.5 duration-300"/>
               </Link>
             </>
           ))}
