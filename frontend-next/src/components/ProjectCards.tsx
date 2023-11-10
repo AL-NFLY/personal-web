@@ -50,7 +50,7 @@ const ProjectCards = async() => {
             <div className='flex mt-8'>
                 <Link
                     href='/'
-                    className='px-12 py-2 rounded-md text-sm font-semibold bg-zinc-200/50 dark:bg-zinc-800/50 hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 duration-150'
+                    className='px-12 py-2 rounded-md max-sm:w-full text-center text-sm font-semibold bg-zinc-200/50 dark:bg-zinc-800/50 hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 duration-150'
                 >
                     Back to Home
                 </Link>
