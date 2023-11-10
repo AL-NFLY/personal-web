@@ -55,6 +55,7 @@ export default async function Project({ params }: Props){
                                 </Link>
                             </li>
                         </ul>
+
                         <div className="mt-3 border-t border-t-zinc-400 pt-3 text-zinc-600 dark:text-zinc-300 space-y-4 leading-relaxed">
                             <p>{project.overview}</p>
                             <PortableText 
@@ -62,7 +63,17 @@ export default async function Project({ params }: Props){
                                 components={RichTextComponents} 
                             />
                         </div>
+
+                        <div className="flex mt-8">
+                            <Link
+                                href='/projects'
+                                className="px-8 py-2 rounded-md text-sm font-bold bg-zinc-200/50 dark:bg-zinc-800/50 hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 duration-150"
+                            >
+                                Back to Projects
+                            </Link>
+                        </div>
                     </div>
+
 
                 </>
             </article>
