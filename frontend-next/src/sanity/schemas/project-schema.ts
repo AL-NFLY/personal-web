@@ -35,7 +35,7 @@ const project = {
         {
             name: "tags",
             title: "Tags",
-            type: "url",
+            type: "string",
         },
         {
             name: "url",
