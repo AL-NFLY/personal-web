@@ -10,6 +10,7 @@ Tech Stack:
 - TailwindCSS
 
 TODOs:
+- [ ] Add project tags to Sanity schema
 - [ ] Finalize individual Project blogs
 - [ ] Add three.js to the main page 
 - [ ] Finalize front-end design
