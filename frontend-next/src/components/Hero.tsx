@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </article>
         <Link className="absolute bottom-8 md:bottom-12 rounded-full transition-colors duration-300" href='#experience'>
-          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse active:animate-none md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary active:scale-95 '/>
+          <IoCaretDown className='rounded-full h-8 w-8 animate-pulse active:animate-none md:h-10 md:w-10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 duration-300'/>
         </Link>
     </section>
   )
