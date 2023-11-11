@@ -17,7 +17,7 @@ const ProjectCards = async() => {
 
             <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-4 lg:gap-x-6">{projects.map((project) => (
                 <li 
-                    className="flex justify-center items-center group px-2 pt-2 rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-300 dark:from-zinc-500 dark:to-zinc-500 hover:from-primary hover:to-secondary dark:hover:from-primary dark:hover:to-secondary bg-bottom bg-no-repeat bg-[length:100%_4px] bg-zinc-100/50 hover:bg-zinc-200/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-2 active:-translate-y-0.5 duration-300"
+                    className="group flex justify-center items-center group px-2 pt-2 rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-300 dark:from-zinc-500 dark:to-zinc-500 hover:from-primary hover:to-secondary dark:hover:from-primary dark:hover:to-secondary bg-bottom bg-no-repeat bg-[length:100%_4px] bg-zinc-100/50 hover:bg-zinc-200/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-2 active:-translate-y-0.5 duration-300"
                     // className="flex justify-center items-center group rounded-lg border border-b-4 border-zinc-300 dark:border-zinc-500 hover:border-b-primary dark:hover:border-b-primary hover:-translate-y-2 active:scale-[0.98] duration-300 transition-all"
                     key={project._id}
                 >
@@ -32,6 +32,10 @@ const ProjectCards = async() => {
                                 // className="object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
                                 />
                                 )}
+
+                                <p className='absolute p-1 rounded-md text-xs text-white right-4 bottom-1/3 translate-y-0 group-hover:-translate-y-6 md:group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 bg-black/50 duration-300'>
+                                    {project.tags}
+                                </p>
                             
                             <div className="px-6 py-4 max-sm:px-4 max-sm:py-3">
                                 <span className="font-extrabold text-sm lg:text-base tracking-tight md:tracking-normal dark:text-primary group-hover:bg-gradient-to-r from-primary to-secondary group-hover:dark:bg-clip-text group-hover:dark:text-transparent group-hover:bg-red-300 duration-50">
