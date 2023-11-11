@@ -33,6 +33,11 @@ const project = {
             ]
         },
         {
+            name: "tags",
+            title: "Tags",
+            type: "url",
+        },
+        {
             name: "url",
             title: "URL",
             type: "url",
