@@ -49,7 +49,10 @@ const CurratedProjectCards = async() => {
                                         className="object-cover overflow-hidden aspect-[16/10] rounded-lg w-full h-auto"
                                         // className=" object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
                                         />
-                                        <>
+                                        <p className='absolute p-1 rounded-md right-4 bottom-1/3 translate-y-0 group-hover:-translate-y-6 md:group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 text-xs text-white bg-black/50 duration-300'>
+                                            {project.tags}
+                                        </p>
+                                        {/* <>
                                             {CurratedProjectTags.map((item) => (
                                                 <div
                                                     key={item.id} 
@@ -57,7 +60,7 @@ const CurratedProjectCards = async() => {
                                                     {item.id}
                                                 </div>
                                             ))}
-                                        </>
+                                        </> */}
                                     </>
                                 )}
                             
