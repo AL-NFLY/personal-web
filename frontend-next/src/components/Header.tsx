@@ -37,7 +37,7 @@ const Header = () => {
         AL
         </Link>
 
-        <ul className='flex items-center gap-x-6 md:gap-x-12'>
+        <ul className='flex items-center gap-x-6 md:gap-x-10'>
           {routes.map((item) => (
             <li 
               key={item.label}
