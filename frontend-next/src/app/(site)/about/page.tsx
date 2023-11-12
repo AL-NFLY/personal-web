@@ -39,9 +39,6 @@ export default async function About() {
                                 <PortableText value={author.description}  components={RichTextComponents}/>
                             </div>
                             <SocialItem />
-                            <div className='flex font-extrabold text-9xl px-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 active:scale-100'>
-                                AL
-                            </div>
                         </article>
                     ))}
                 </>
