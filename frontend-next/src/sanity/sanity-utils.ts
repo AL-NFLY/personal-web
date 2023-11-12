@@ -47,8 +47,3 @@ export async function getProfiles(): Promise<Profile[]> {
         }`
     )
 }
-
-// export async function getProfile(): Promise<Profile> {
-    
-// }
-
