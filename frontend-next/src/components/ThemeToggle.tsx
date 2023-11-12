@@ -5,21 +5,6 @@ import React from 'react'
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 const ThemeToggle = () => {
-  // const {resolvedTheme, setTheme} = useTheme()
-  // return (
-  //   <button
-  //     aria-label='Toggle Dark Mode'
-  //     type="button"
-  //     className=""
-  //     onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-  //   >
-  //     {resolvedTheme === 'dark' ? (
-  //       <IoSunny />
-  //     ) : (
-  //       <IoMoon
-  //     )}
-  //   </button>
-  // )
   const { theme, setTheme } = useTheme()
   const clickToggle = () => setTheme(theme === 'dark' ? 'light' : 'dark')
   return (
