@@ -2,9 +2,7 @@
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
 import ThemeToggle from './ThemeToggle'
-import { useTheme } from 'next-sanity/studio'
 import { useMemo } from 'react'
-import { twMerge } from "tailwind-merge";
 import NavList from './NavList';
 
 const Header = () => {
