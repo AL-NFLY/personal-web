@@ -32,7 +32,7 @@ export default async function About() {
                                     alt={author.name}
                                     width={200}
                                     height={200}
-                                    className="w-48 h-auto aspect-[3/4] object-cover"
+                                    className="w-48 h-auto aspect-[3/4] object-cover rounded-md"
                                 />
                             </div>
                             <div className="flex flex-col 2xl:max-w-2xl leading-relaxed text-zinc-600 dark:text-zinc-300 max-sm:mt-6 space-y-2 md:space-y-3">

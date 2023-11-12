@@ -2,23 +2,6 @@ import { getProjects } from '@/sanity/sanity-utils';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
-import { IconType } from 'react-icons';
-import { IoLogoJavascript } from 'react-icons/io5';
-
-interface CurratedProjectTagsProps {
-    id: string;
-    icon: IconType;
-    alt: string;
-}
-
-// Placeholder, replace once schema is updated!
-const CurratedProjectTags: CurratedProjectTagsProps[] = [
-    {
-        id: '#webdev #js',
-        icon: IoLogoJavascript,
-        alt: 'Javascript Logo',
-    }
-]
 
 const CurratedProjectCards = async() => {
     const projects = await getProjects();
@@ -52,15 +35,6 @@ const CurratedProjectCards = async() => {
                                         <p className='absolute p-1 rounded-md right-4 bottom-1/3 translate-y-0 group-hover:-translate-y-6 md:group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 text-xs text-white bg-black/50 duration-300'>
                                             {project.tags}
                                         </p>
-                                        {/* <>
-                                            {CurratedProjectTags.map((item) => (
-                                                <div
-                                                    key={item.id} 
-                                                    className='absolute p-1 rounded-md right-4 bottom-1/3 translate-y-0 group-hover:-translate-y-6 md:group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 text-xs text-white bg-black/50 duration-300'>
-                                                    {item.id}
-                                                </div>
-                                            ))}
-                                        </> */}
                                     </>
                                 )}
                             

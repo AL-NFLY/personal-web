@@ -33,10 +33,10 @@ export default async function Project({ params }: Props){
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-x-2 group"
+                                    className="flex items-center gap-x-1 group"
                                 >
                                     <IoLink className="w-6 h-auto" />
-                                    <p className="text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
+                                    <p className="rounded-md px-1 text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
                                         Live Link
                                     </p>
                                 </Link>
@@ -46,10 +46,10 @@ export default async function Project({ params }: Props){
                                     href='https://github.com/AL-NFLY/'
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-x-2 group"
+                                    className="flex items-center gap-x-1 group"
                                 >
                                     <IoLogoGithub className="w-6 h-auto" />
-                                    <p className="text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
+                                    <p className="rounded-md px-1 text-xs font-semibold bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0%_2px] group-hover:bg-[length:100%_2px] transition-all">
                                         Github Link
                                     </p>
                                 </Link>
