@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react'
 import { IconType } from 'react-icons';
 import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp, IoMail } from 'react-icons/io5';
 
