@@ -6,10 +6,20 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center min-h-screen ">
         <article>
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">Hi,</h2>
-          <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold">
-            I&apos;m <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Almer</span>!
+          <h1 className="group text-4xl md:text-5xl 2xl:text-6xl font-bold">
+            <div className="group-hover:hidden">
+              I&apos;m <span className="rounded-md bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Almer</span>!
+            </div>
+            <div className="hidden group-hover:inline">
+              I&apos;m <span className="rounded-md bg-gradient-to-r from-primary to-secondary bg-bottom bg-no-repeat bg-[length:0_4px] hover:bg-[length:100%_4px] active:bg-[length:100%_100%] active:text-zinc-900  duration-150">Almer</span>!
+            </div>
           </h1>
           <p className="mt-4 text-dark dark:text-zinc-300 tracking-wide">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p>
+          {/* <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold">
+            I&apos;m <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Almer</span>!
+          </h1>
+          <p className="mt-4 text-dark dark:text-zinc-300 tracking-wide">A Software Engineer & Bachelor of Engineering in Computer Eng. ITS</p> */}
+
 
           <div className="flex mt-6 gap-x-6">
           <Link
