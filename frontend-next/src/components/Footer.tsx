@@ -34,7 +34,7 @@ const socials: Social[] = [
 
 const Footer = () => {
   return (
-    <footer className='xl:px-48 max-sm:px-8 pb-2' id="contact">
+    <footer className='px-8 xl:px-48 pb-2' id="contact">
       <main className='mt-12 flex flex-col flex-wrap items-center border-t border-zinc-500 text-zinc-600 dark:text-zinc-300'>
         <p className="mt-8">Hit me up!</p>
         <div className='flex space-x-4 mt-1'>
