@@ -18,7 +18,6 @@ const ProjectCards = async() => {
             <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-4 lg:gap-x-6">{projects.map((project) => (
                 <li 
                     className="group flex justify-center items-center group px-2 pt-2 rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-300 dark:from-zinc-500 dark:to-zinc-500 hover:from-primary hover:to-secondary dark:hover:from-primary dark:hover:to-secondary bg-bottom bg-no-repeat bg-[length:100%_4px] bg-zinc-100/50 hover:bg-zinc-200/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-2 active:-translate-y-0.5 duration-300"
-                    // className="flex justify-center items-center group rounded-lg border border-b-4 border-zinc-300 dark:border-zinc-500 hover:border-b-primary dark:hover:border-b-primary hover:-translate-y-2 active:scale-[0.98] duration-300 transition-all"
                     key={project._id}
                 >
                         <Link href={`/projects/${project.slug}`}>
@@ -29,7 +28,6 @@ const ProjectCards = async() => {
                                 width={500}
                                 height={250}
                                 className="object-cover overflow-hidden aspect-[16/10] rounded-lg"
-                                // className="object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
                                 />
                                 )}
 
