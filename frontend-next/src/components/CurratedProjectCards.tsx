@@ -17,7 +17,6 @@ const CurratedProjectCards = async() => {
 
             <ul className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">{selectedProjects.map((project) => (
                 <li 
-                // className="flex justify-center items-center group rounded-lg border border-b-4 border-zinc-300 dark:border-zinc-500 hover:border-b-primary dark:hover:border-b-primary hover:-translate-y-2 active:scale-[0.98] duration-300 transition-all"
                 className="group flex justify-center items-center group px-2 pt-2 rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-300 dark:from-zinc-500 dark:to-zinc-500 hover:from-primary hover:to-secondary dark:hover:from-primary dark:hover:to-secondary bg-bottom bg-no-repeat bg-[length:100%_4px] bg-zinc-100/50 hover:bg-zinc-200/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-2 active:-translate-y-0.5 duration-300"
                 key={project._id}
                 >
@@ -30,7 +29,6 @@ const CurratedProjectCards = async() => {
                                         width={500}
                                         height={250}
                                         className="object-cover overflow-hidden aspect-[16/10] rounded-lg w-full h-auto"
-                                        // className=" object-cover overflow-hidden aspect-[16/10] rounded-t-lg border-b border-zinc-300 dark:border-b-zinc-500 "
                                         />
                                         <p className='absolute p-1 rounded-md right-4 bottom-1/3 translate-y-0 group-hover:-translate-y-6 md:group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 text-xs text-white bg-black/50 duration-300'>
                                             {project.tags}
@@ -56,7 +54,6 @@ const CurratedProjectCards = async() => {
                 <Link
                     href={'/projects'}
                     className="px-6 py-2 font-bold text-sm text-black dark:text-zinc-300 rounded-md bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800/50 dark:hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 max-sm:w-full text-center duration-150"
-                    // className="px-4  py-2 font-bold text-sm text-zinc-600 dark:text-zinc-300 border rounded-sm border-zinc-300 dark:border-zinc-500 shadow-sm hover:shadow-primary active:scale-95 duration-300"
                 >
                     View More Projects
                 </Link>
