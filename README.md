@@ -6,8 +6,8 @@ Tech Stack:
 - Typescript
 - Next.js 13
 - Sanity.io
-- GROQ (GraphQL)
 - TailwindCSS
+- GROQ (GraphQL)
 
 TODOs:
 - [ ] Finalize individual Project blogs
