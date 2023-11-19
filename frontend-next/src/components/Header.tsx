@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header className='sticky top-0 z-50'>
-      <nav className='flex justify-between items-center md:px-48 px-8 py-4 dark:bg-dark bg-white shadow-sm dark:shadow-none'>
+      <nav className='flex justify-between items-center md:px-48 px-8 py-4 bg-white dark:bg-dark bg-gradient-to-r from-primary/50 to-secondary/75 dark:from-primary/20 dark:to-secondary/40 bg-bottom bg-no-repeat bg-[length:100%_1.5px]'>
         <Link
           href='/'
           className='flex font-extrabold text-3xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 active:scale-100'
