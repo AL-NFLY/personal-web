@@ -38,7 +38,7 @@ export default async function About() {
                                     <Link
                                         href='https://drive.google.com/file/d/1SVcxmopbjgWPImLW-GdryXJAZv1jGiOy/view?usp=sharing'
                                         target="_blank"
-                                        className="translate-y-28 absolute w-48 rounded-md rounded-t-none py-1.5 text-center ring-1 ring-inset ring-secondary/10 bg-zinc-50/50 dark:bg-zinc-800/50 dark:hover:bg-zinc-800/75 bg-gradient-to-r hover:from-primary hover:to-secondary bg-bottom bg-no-repeat bg-[length:0_3px] hover:bg-[length:100%_3px] font-semibold duration-300"
+                                        className="translate-y-28 absolute w-48 rounded-md rounded-t-none py-1.5 text-center ring-1 ring-inset ring-secondary/10 bg-zinc-50/40 hover:bg-zinc-50/60 dark:bg-zinc-800/50 dark:hover:bg-zinc-800/75 bg-gradient-to-r hover:from-primary hover:to-secondary bg-bottom bg-no-repeat bg-[length:0_3px] hover:bg-[length:100%_3px] font-semibold duration-300"
                                         >
                                         View my CV
                                     </Link>
