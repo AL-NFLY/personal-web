@@ -31,4 +31,4 @@ TODOs:
 - [x] ~~Add Darkmode~~
 - [x] ~~Add project's content in Project Schema~~
 - [x] ~~Seperate currated & overall projects~~
-- [x] Add project tags to Sanity schema
+- [x] ~~Add project tags to Sanity schema~~
