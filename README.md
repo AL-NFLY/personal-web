@@ -2,17 +2,17 @@
 ![Website Thumbnail](frontend-next/public/images/hero.png)
 An evergrowing porfolio website made for a hands-on learning experience for Sanity.io as Content Management System (CMS) and Typescript. Here is where I will document projects I have made, I'm making, or will be making in the future.
 
-### Project Link: 
+## Project Link: 
 [Click Here!](https://almer.vercel.app/)
 
-### Tech Stack:
+## Tech Stack:
 - Typescript
 - Next.js 13
 - Sanity.io
 - TailwindCSS
 - GROQ (GraphQL)
 
-### TODOs:
+## TODOs:
 - [ ] Finalize individual Project blogs
 - [ ] Add three.js to the main page 
 - [ ] Finalize front-end design
