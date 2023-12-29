@@ -98,7 +98,7 @@ const Experience = () => {
             >
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{item.title}</span>
               <p className="text-zinc-400 !mt-0 !text-sm">{item.location}</p>
-              <ul className="list-disc iniside list-inside mt-3 space-y-1 text-sm text-zinc-300 tracking-wide">
+              <ul className="list-disc mt-3 pl-4 space-y-1.5 text-sm text-zinc-300 tracking-wide">
                 <li>{item.descOne}</li>
                 <li>{item.descTwo}</li>
                 <li>{item.descThree}</li>
