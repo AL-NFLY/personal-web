@@ -16,7 +16,6 @@ An evergrowing porfolio website made for a hands-on learning experience for Sani
 - [ ] Finalize individual Project blogs
 - [ ] Add three.js to the main page 
 - [ ] Finalize front-end design
-- [ ] Add Vastify Store to projects
 - [x] ~~Create Projects app~~
 - [x] ~~Installed Next.js~~
 - [x] ~~Installed Sanity.io~~
@@ -36,3 +35,4 @@ An evergrowing porfolio website made for a hands-on learning experience for Sani
 - [x] ~~Add project's content in Project Schema~~
 - [x] ~~Seperate currated & overall projects~~
 - [x] ~~Add project tags to Sanity schema~~
+- [x] ~~Add Vastify Store to projects~~
