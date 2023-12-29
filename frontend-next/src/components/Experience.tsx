@@ -73,7 +73,7 @@ const Experience = () => {
         <span  className=" text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Experience</span>
       </h2>
 
-      <p className="mt-2">These are some of my experience while I was pursuing my bachelor&apos; degree</p>
+      <p className="mt-2 text-zinc-600 dark:text-zinc-300">These are a brief description of my experience</p>
       <VerticalTimeline
         lineColor="#d4d4d8"
         className="!mt-6 md:!mt-12"
