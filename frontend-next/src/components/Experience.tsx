@@ -12,7 +12,7 @@ export const experiencesData = [
     location: 'PT. Bank Mandiri',
     descOne: 'Selected as one from 600 out of 24.000 applicants to be accepted as a participant of MyDigitalAcademy.',
     descTwo: 'Given the responsibility as a Team Leader of Class H - Group 3.',
-    descThree: 'Currently working on a Group Final Project themed "Investing for the Underage" using OutSystem for app development.',
+    descThree: 'Currently working on a Group Final Project, themed "Investing for the Underage", using OutSystem for app development.',
     icon: <BiSolidBank /> ,
     date: 'December 2023 - Present',
   },
