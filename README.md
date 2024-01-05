@@ -13,8 +13,8 @@ An evergrowing porfolio website made for a hands-on learning experience for Sani
 - GROQ (GraphQL)
 
 ## TODOs:
-- [ ] Finalize front-end design
 - [ ] Finalize individual Project blogs
+- [ ] Finalize front-end design
 - [x] ~~Create Projects app~~
 - [x] ~~Installed Next.js~~
 - [x] ~~Installed Sanity.io~~
