@@ -14,7 +14,6 @@ An evergrowing porfolio website made for a hands-on learning experience for Sani
 
 ## TODOs:
 - [ ] Finalize individual Project blogs
-- [ ] Add three.js to the main page 
 - [ ] Finalize front-end design
 - [x] ~~Create Projects app~~
 - [x] ~~Installed Next.js~~
