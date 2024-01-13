@@ -9,8 +9,8 @@ An evergrowing porfolio website made for a hands-on learning experience for Sani
 - Typescript
 - Next.js 13
 - Sanity.io
-- GROQ (G`raphQL)
 - TailwindCSS
+- GROQ (G`raphQL)
 
 ## TODOs:
 - [ ] Add MDA Capstone Project to Project list
