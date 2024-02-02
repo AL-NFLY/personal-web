@@ -14,7 +14,7 @@ export const experiencesData = [
     descTwo: 'Given the responsibility as a Team Leader of Class H - Group 3.',
     descThree: 'Currently working on a Capstone Project, themed "Investing for the Underage", using OutSystems for app development.',
     icon: <BiSolidBank /> ,
-    date: 'December 2023 - Present',
+    date: 'December 2023 - January 2023',
   },
   {
     title: 'Cloud Engineer Intern',
