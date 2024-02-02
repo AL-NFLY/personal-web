@@ -8,11 +8,20 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export const experiencesData = [
   {
+    title: 'ODP IT',
+    location: 'PT. Bank Mandiri',
+    descOne: 'Selected as one of 92 out of 600 My Digital Academy graduates for 2024 earliest ODP onboarding on February 2024',
+    descTwo: 'Placed in batch 272 as Officer Development Program Information & Technology (ODP IT)',
+    descThree: 'Currently learning the fundamentals of banking in Mandiri University',
+    icon: <BiSolidBank />,
+    date: 'February 2024 - Present'
+  },
+  {
     title: 'My Digital Academy Participant',
     location: 'PT. Bank Mandiri',
     descOne: 'Selected as one of 600 out of 24.000 applicants to be accepted as a participant of My Digital Academy Batch 2.',
     descTwo: 'Given the responsibility as a Team Leader of Class H - Group 3.',
-    descThree: 'Currently working on a Capstone Project, themed "Investing for the Underage", using OutSystems for app development.',
+    descThree: 'Worked on a Capstone Project, themed "Investing for the Underage", using OutSystems for app development.',
     icon: <BiSolidBank /> ,
     date: 'December 2023 - January 2023',
   },
