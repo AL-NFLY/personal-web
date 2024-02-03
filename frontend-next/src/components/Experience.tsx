@@ -8,7 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export const experiencesData = [
   {
-    title: 'ODP IT',
+    title: 'Officer Development Program - IT',
     location: 'PT. Bank Mandiri',
     descOne: 'Selected as one of 92 out of 600 My Digital Academy graduates for 2024 earliest ODP onboarding on February 2024',
     descTwo: 'Placed in batch 272 as Officer Development Program Information & Technology (ODP IT)',
