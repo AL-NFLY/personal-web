@@ -35,4 +35,4 @@ An evergrowing porfolio website made for a hands-on learning experience for Sani
 - [x] ~~Seperate currated & overall projects~~
 - [x] ~~Add project tags to Sanity schema~~
 - [x] ~~Add Vastify Store to projects~~
-- [x] Add MDA Capstone Project to Project list
+- [x] ~~Add MDA Capstone Project to Project list~~
